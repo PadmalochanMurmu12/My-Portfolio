@@ -164,14 +164,31 @@ body::after {
   display: inline-block;
   color: #c0e8ff;
   font-weight: 600;
-  margin: 0.8rem 0;
+  margin: 0.8rem auto;
   animation: typing 3s steps(30, end) infinite;
   white-space: nowrap;
   overflow: hidden;
-  border-right: none; /* removed blinking line */
+  border-right: none;
   text-align: center;
+  max-width: 100%;
 }
 
+/* Mobile - smaller font to fit animation */
+@media (max-width: 768px) {
+  .typing {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    max-width: 95%;
+    margin: 0.8rem auto;
+  }
+}
+
+/* Very small screens - even smaller */
+@media (max-width: 400px) {
+  .typing {
+    font-size: 0.85rem;
+  }
+}
 
 @keyframes typing {
   0%, 100% { width: 0; }
@@ -400,10 +417,20 @@ body::after {
 }
 
 .social-links {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1.2rem;
+  flex-wrap: wrap; /* Ensures wrapping if space is tight */
+}
+
+.social-links .top-row {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-links .bottom-row {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .social-links a {
@@ -418,6 +445,29 @@ body::after {
 .social-links a:hover {
   background: #00aaff;
   color: #fff;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 430px) {
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    position: relative;
+  }
+  .social-links .gmail {
+    order: 1;
+    margin-right: auto;
+  }
+  .social-links a:not(.gmail):not(.medium) {
+    order: 2;
+  }
+  .social-links .medium {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.7rem;
+  }
 }
 
 footer {
