@@ -415,7 +415,44 @@ body::after {
   padding: 4rem 2rem;
   text-align: center;
 }
+* Resume Button Styles - ADD THIS NEW SECTION */
+.resume-section {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
 
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #00aaff, #0095dd);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 170, 255, 0.5);
+  background: linear-gradient(135deg, #0095dd, #007acc);
+}
+
+.resume-btn:active {
+  transform: translateY(-1px);
+}
+
+.resume-icon {
+  font-size: 1.2rem;
+}
+/* END Resume Button Styles */
 .social-links {
   display: flex;
   justify-content: center;
