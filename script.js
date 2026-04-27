@@ -35,7 +35,26 @@ document.addEventListener('click', (e) => {
 });
 
  // Dynamically set resume link from config
-const resumeLink = document.getElementById('resume-link');
-if (resumeLink && typeof CONFIG !== 'undefined' && CONFIG.RESUME_URL) {
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("DOM loaded. Looking for resume link...");
+  const resumeLink = document.getElementById('resume-link');
+  
+  if (!resumeLink) {
+    console.error("Bug: Could not find the element with id 'resume-link'");
+    return;
+  }
+
+  if (typeof CONFIG === 'undefined') {
+    console.error("Bug: CONFIG is not defined. Did config.js load properly?");
+    return;
+  }
+
+  if (!CONFIG.RESUME_URL) {
+    console.error("Bug: CONFIG.RESUME_URL is empty or missing.");
+    return;
+  }
+
+  // If we made it here, inject the URL
   resumeLink.href = CONFIG.RESUME_URL;
-}
+  console.log("Success: Resume link attached!", resumeLink.href);
+});
