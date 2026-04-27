@@ -32,10 +32,10 @@ document.addEventListener('click', (e) => {
     hamburger.setAttribute('aria-expanded', 'false');
   }
 
-  // Dynamically set resume link from config
+});
+
+ // Dynamically set resume link from config
 const resumeLink = document.getElementById('resume-link');
 if (resumeLink && typeof CONFIG !== 'undefined' && CONFIG.RESUME_URL) {
   resumeLink.href = CONFIG.RESUME_URL;
 }
-
-});
