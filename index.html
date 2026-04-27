@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="config.js"></script>
   <script defer src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,31 +31,29 @@
         <li><a href="#certifications">🎖️Certifications</a></li>
         <li><a href="#contact">📲Contact</a></li>
       </ul>
-      <!-- <div class="theme-toggle">🌙</div> -->
     </nav>
   </header>
 
   <section id="home" class="hero">
     <h1>I'm <span class="highlight">Padmalochan Murmu</span></h1>
     <h2 class="typing">Junior Quality Analyst and Tech Enthusiast</h2>
-    <!-- <button class="btn">View Projects</button> -->
   </section>
 
   <section id="about" class="about">
-  <h1><strong>🕵️About Me</strong></h1>
-  <p>
-    Dynamic and results-oriented QA Engineer with 3+ years of experience in Manual Testing, Automation Testing, Database Testing, and API Testing. Experienced in ensuring quality across web, mobile, and desktop applications within Healthcare, E-commerce, Social Media, E-learning, and Sports-tech domains.
-    <br><br>
-    Proficient in Selenium, Playwright, and Postman, with a strong understanding of Agile testing methodologies, I focus on identifying defects early, optimizing test coverage, and ensuring reliable product releases.
-  <br><br>
-    Known for a meticulous attention to detail and a commitment to continuous improvement, I collaborate closely with development, design, and product teams to transform requirements into stable, high-performing software—enhancing user experience and accelerating delivery cycles.
-  </p>
-</section>
+    <h1><strong>🕵️About Me</strong></h1>
+    <p>
+      Dynamic and results-oriented QA Engineer with 3+ years of experience in Manual Testing, Automation Testing, Database Testing, and API Testing. Experienced in ensuring quality across web, mobile, and desktop applications within Healthcare, E-commerce, Social Media, E-learning, and Sports-tech domains.
+      <br><br>
+      Proficient in Selenium, Playwright, and Postman, with a strong understanding of Agile testing methodologies, I focus on identifying defects early, optimizing test coverage, and ensuring reliable product releases.
+      <br><br>
+      Known for a meticulous attention to detail and a commitment to continuous improvement, I collaborate closely with development, design, and product teams to transform requirements into stable, high-performing software—enhancing user experience and accelerating delivery cycles.
+    </p>
+  </section>
 
-<section id="experience" class="experience">
-  <h1><strong>💼Work Experience</strong></h1>
-  <div class="certification-grid">
-    <div class="certification-card">
+  <section id="experience" class="experience">
+    <h1><strong>💼Work Experience</strong></h1>
+    <div class="certification-grid">
+      <div class="certification-card">
         <h3><strong>🏢Codebrew Labs</strong></h3>
         <br>
         <p>🌐Mohali, Punjab</p>
@@ -84,185 +81,172 @@
         <p>🗓️April 2022 - February 2023</p>
         <p>🛠Test Trainee</p>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-  <!-- ===== SKILLS SECTION ===== -->
-<section id="skills" class="skills" aria-label="Skills section">
-  <h1 class="section-heading"><strong>🧠 Skills</strong></h1>
+  <section id="skills" class="skills" aria-label="Skills section">
+    <h1 class="section-heading"><strong>🧠 Skills</strong></h1>
 
-  <div class="skills-accordion" id="skillsAccordion" aria-live="polite">
-    <!-- Item 0 -->
-    <article class="acc-item" data-index="0" aria-expanded="false">
-      <button class="acc-header" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
-        <span class="acc-icon" aria-hidden="true">🧪</span>
-        <div class="acc-title-block">
-          <div class="acc-title">Testing Types</div>
+    <div class="skills-accordion" id="skillsAccordion" aria-live="polite">
+      <article class="acc-item" data-index="0" aria-expanded="false">
+        <button class="acc-header" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
+          <span class="acc-icon" aria-hidden="true">🧪</span>
+          <div class="acc-title-block">
+            <div class="acc-title">Testing Types</div>
+          </div>
+          <span class="acc-chevron" aria-hidden="true">▶</span>
+        </button>
+
+        <div id="acc-panel-0" class="acc-panel" role="region" aria-labelledby="acc-header-0" hidden>
+          <div class="acc-inner">
+            <ul>
+              <li>Functional Testing</li>
+              <li>Integration Testing</li>
+              <li>System Testing</li>
+              <li>Regression Testing</li>
+              <li>Compatibility Testing</li>
+              <li>API Testing</li>
+              <li>Automation Testing</li>
+              <li>Database Testing</li>
+            </ul>
+          </div>
         </div>
-        <span class="acc-chevron" aria-hidden="true">▶</span>
-      </button>
+      </article>
 
-      <div id="acc-panel-0" class="acc-panel" role="region" aria-labelledby="acc-header-0" hidden>
-        <div class="acc-inner">
-          <ul>
-            <li>Functional Testing</li>
-            <li>Integration Testing</li>
-            <li>System Testing</li>
-            <li>Regression Testing</li>
-            <li>Compatibility Testing</li>
-            <li>API Testing</li>
-            <li>Automation Testing</li>
-            <li>Database Testing</li>
-          </ul>
+      <article class="acc-item" data-index="1" aria-expanded="false">
+        <button class="acc-header" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
+          <span class="acc-icon" aria-hidden="true">📋</span>
+          <div class="acc-title-block">
+            <div class="acc-title">Test Planning & Execution</div>
+          </div>
+          <span class="acc-chevron" aria-hidden="true">▶</span>
+        </button>
+
+        <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1" hidden>
+          <div class="acc-inner">
+            <ul>
+              <li>Test Plan, Test Case, User Stories, Use case template creation</li>
+              <li>Regression checklist & release criteria</li>
+              <li>Bug lifecycle, SDLC and STLC</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <!-- Item 1 -->
-    <article class="acc-item" data-index="1" aria-expanded="false">
-      <button class="acc-header" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
-        <span class="acc-icon" aria-hidden="true">📋</span>
-        <div class="acc-title-block">
-          <div class="acc-title">Test Planning & Execution</div>
+      <article class="acc-item" data-index="2" aria-expanded="false">
+        <button class="acc-header" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
+          <span class="acc-icon" aria-hidden="true">📊</span>
+          <div class="acc-title-block">
+            <div class="acc-title">Project Management & Defect Tracking</div>
+          </div>
+          <span class="acc-chevron" aria-hidden="true">▶</span>
+        </button>
+
+        <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2" hidden>
+          <div class="acc-inner">
+            <ul>
+              <li>JIRA</li>
+              <li>Trello</li>
+              <li>Mantis</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
         </div>
-        <span class="acc-chevron" aria-hidden="true">▶</span>
-      </button>
+      </article>
 
-      <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1" hidden>
-        <div class="acc-inner">
-          <ul>
-            <li>Test Plan, Test Case, User Stories, Use case template creation</li>
-            <li>Regression checklist & release criteria</li>
-            <li>Bug lifecycle, SDLC and STLC</li>
-          </ul>
+      <article class="acc-item" data-index="3" aria-expanded="false">
+        <button class="acc-header" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
+          <span class="acc-icon" aria-hidden="true">⚙️</span>
+          <div class="acc-title-block">
+            <div class="acc-title">Tools & Technologies</div>
+          </div>
+          <span class="acc-chevron" aria-hidden="true">▶</span>
+        </button>
+
+        <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3" hidden>
+          <div class="acc-inner">
+            <ul>
+              <li>GitHub (version control)</li>
+              <li>Postman and Swagger UI (API Testing)</li>
+              <li>MySQL (Database Testing)</li>
+              <li>Mobile Wallets: Apple and Google</li>
+              <li>BrowserStack (compatibility testing)</li>
+              <li>Payment Gateways (Chase / JP Morgan)</li>
+              <li>CRM: Dynamics 365</li>
+              <li>Generative AI for test strategy</li>
+              <li>AR Kit: Apple and Google</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
 
-    <!-- Item 2 -->
-    <article class="acc-item" data-index="2" aria-expanded="false">
-      <button class="acc-header" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
-        <span class="acc-icon" aria-hidden="true">📊</span>
-        <div class="acc-title-block">
-          <div class="acc-title">Project Management & Defect Tracking</div>
-        </div>
-        <span class="acc-chevron" aria-hidden="true">▶</span>
-      </button>
+    <script>
+      (function(){
+        const accordion = document.getElementById('skillsAccordion');
+        if(!accordion) return;
+        const items = Array.from(accordion.querySelectorAll('.acc-item'));
+        const headers = items.map(it => it.querySelector('.acc-header'));
+        const panels = items.map(it => it.querySelector('.acc-panel'));
 
-      <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2" hidden>
-        <div class="acc-inner">
-          <ul>
-            <li>JIRA</li>
-            <li>Trello</li>
-            <li>Mantis</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-      </div>
-    </article>
+        function collapseAll(except = -1){
+          items.forEach((it, idx) => {
+            if(idx === except) return;
+            if(it.getAttribute('aria-expanded') === 'true'){
+              const panel = panels[idx];
+              panel.style.height = panel.scrollHeight + 'px';
+              requestAnimationFrame(()=> { panel.style.transition = 'height 260ms ease'; panel.style.height = '0px'; });
+              it.setAttribute('aria-expanded','false');
+              it.querySelector('.acc-header').setAttribute('aria-expanded','false');
+              setTimeout(()=> { panel.hidden = true; panel.style.transition=''; panel.style.height=''; }, 300);
+            }
+          });
+        }
 
-    <!-- Item 3 -->
-    <article class="acc-item" data-index="3" aria-expanded="false">
-      <button class="acc-header" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
-        <span class="acc-icon" aria-hidden="true">⚙️</span>
-        <div class="acc-title-block">
-          <div class="acc-title">Tools & Technologies</div>
-        </div>
-        <span class="acc-chevron" aria-hidden="true">▶</span>
-      </button>
-
-      <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3" hidden>
-        <div class="acc-inner">
-          <ul>
-            <li>GitHub (version control)</li>
-            <li>Postman and Swagger UI (API Testing)</li>
-            <li>MySQL (Database Testing)</li>
-            <li>Mobile Wallets: Apple and Google</li>
-            <li>BrowserStack (compatibility testing)</li>
-            <li>Payment Gateways (Chase / JP Morgan)</li>
-            <li>CRM: Dynamics 365</li>
-            <li>Generative AI for test strategy</li>
-            <li>Mobile Wallets: Apple and Google</li>
-            <li>AR Kit: Apple and Google</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <!-- Inline JS (small) to make this fragment functional immediately -->
-  <script>
-    (function(){
-      const accordion = document.getElementById('skillsAccordion');
-      if(!accordion) return;
-      const items = Array.from(accordion.querySelectorAll('.acc-item'));
-      const headers = items.map(it => it.querySelector('.acc-header'));
-      const panels = items.map(it => it.querySelector('.acc-panel'));
-
-      function collapseAll(except = -1){
-        items.forEach((it, idx) => {
-          if(idx === except) return;
-          if(it.getAttribute('aria-expanded') === 'true'){
-            const panel = panels[idx];
+        function toggle(index){
+          const it = items[index], panel = panels[index];
+          const open = it.getAttribute('aria-expanded') === 'true';
+          if(open){
             panel.style.height = panel.scrollHeight + 'px';
             requestAnimationFrame(()=> { panel.style.transition = 'height 260ms ease'; panel.style.height = '0px'; });
             it.setAttribute('aria-expanded','false');
             it.querySelector('.acc-header').setAttribute('aria-expanded','false');
             setTimeout(()=> { panel.hidden = true; panel.style.transition=''; panel.style.height=''; }, 300);
-          }
-        });
-      }
-
-      function toggle(index){
-        const it = items[index], panel = panels[index];
-        const open = it.getAttribute('aria-expanded') === 'true';
-        if(open){
-          panel.style.height = panel.scrollHeight + 'px';
-          requestAnimationFrame(()=> { panel.style.transition = 'height 260ms ease'; panel.style.height = '0px'; });
-          it.setAttribute('aria-expanded','false');
-          it.querySelector('.acc-header').setAttribute('aria-expanded','false');
-          setTimeout(()=> { panel.hidden = true; panel.style.transition=''; panel.style.height=''; }, 300);
-        } else {
-          collapseAll(index);
-          panel.hidden = false;
-          panel.style.height = '0px';
-          const target = panel.scrollHeight;
-          requestAnimationFrame(()=> { panel.style.transition = 'height 360ms cubic-bezier(.2,.9,.2,1)'; panel.style.height = target + 'px'; });
-          it.setAttribute('aria-expanded','true');
-          it.querySelector('.acc-header').setAttribute('aria-expanded','true');
-          setTimeout(()=> { panel.style.transition=''; panel.style.height=''; }, 420);
-          // bring into view if needed
-          const rect = it.getBoundingClientRect();
-          if(rect.top < 60 || rect.bottom > (window.innerHeight - 60)){
-            it.scrollIntoView({behavior:'smooth', block:'nearest'});
+          } else {
+            collapseAll(index);
+            panel.hidden = false;
+            panel.style.height = '0px';
+            const target = panel.scrollHeight;
+            requestAnimationFrame(()=> { panel.style.transition = 'height 360ms cubic-bezier(.2,.9,.2,1)'; panel.style.height = target + 'px'; });
+            it.setAttribute('aria-expanded','true');
+            it.querySelector('.acc-header').setAttribute('aria-expanded','true');
+            setTimeout(()=> { panel.style.transition=''; panel.style.height=''; }, 420);
+            const rect = it.getBoundingClientRect();
+            if(rect.top < 60 || rect.bottom > (window.innerHeight - 60)){
+              it.scrollIntoView({behavior:'smooth', block:'nearest'});
+            }
           }
         }
-      }
 
-      headers.forEach((h, i) => {
-        h.addEventListener('click', () => toggle(i));
-        h.addEventListener('keydown', (e) => {
-          const k = e.key;
-          if(k === 'Enter' || k === ' '){ e.preventDefault(); toggle(i); }
-          if(['ArrowDown','ArrowUp','Home','End'].includes(k)){
-            e.preventDefault();
-            let next;
-            if(k === 'ArrowDown') next = (i + 1) % headers.length;
-            if(k === 'ArrowUp') next = (i - 1 + headers.length) % headers.length;
-            if(k === 'Home') next = 0;
-            if(k === 'End') next = headers.length - 1;
-            headers[next].focus();
-          }
+        headers.forEach((h, i) => {
+          h.addEventListener('click', () => toggle(i));
+          h.addEventListener('keydown', (e) => {
+            const k = e.key;
+            if(k === 'Enter' || k === ' '){ e.preventDefault(); toggle(i); }
+            if(['ArrowDown','ArrowUp','Home','End'].includes(k)){
+              e.preventDefault();
+              let next;
+              if(k === 'ArrowDown') next = (i + 1) % headers.length;
+              if(k === 'ArrowUp') next = (i - 1 + headers.length) % headers.length;
+              if(k === 'Home') next = 0;
+              if(k === 'End') next = headers.length - 1;
+              headers[next].focus();
+            }
+          });
         });
-      });
-
-      // Optional: open a default panel on page load (uncomment below)
-      // toggle(0);
-    })();
-  </script>
-</section>
-<!-- ===== END SKILLS SECTION ===== -->
-
+      })();
+    </script>
+  </section>
   <section id="projects" class="projects">
     <h1><strong>🗂️Featured Projects</strong></h1>
     <div class="project-grid">
@@ -342,37 +326,36 @@
         <h3><strong>🏅Software Testing with Generative AI</strong></h3>
         <br>
         <p>💻Simplilearn</p>
-        </div>
+      </div>
       <div class="certification-card">
         <h3><strong>🏅GenAI & AI Agents for QA Automation | Copilot & Claude code</strong></h3>
         <br>
         <p>💻Udemy</p>
+      </div>
     </div>
-    </section>
+  </section>
 
   <section id="contact" class="contact">
-  <h1><strong>Let's Connect📲!</strong></h1>
+    <h1><strong>Let's Connect📲!</strong></h1>
 
-  <div class="social-links">
-    <div class="top-row">
-      <a class="gmail" href="mailto:padmalochanmurmu81@gmail.com">📧Gmail</a>
-      <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba">💼LinkedIn</a>
-      <a href="https://github.com/PadmalochanMurmu12">🐙GitHub</a>
-    </div>
-    <!-- <div class="bottom-row"> -->
+    <div class="social-links">
+      <div class="top-row">
+        <a class="gmail" href="mailto:padmalochanmurmu81@gmail.com">📧Gmail</a>
+        <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba">💼LinkedIn</a>
+        <a href="https://github.com/PadmalochanMurmu12">🐙GitHub</a>
+      </div>
       <a class="medium" href="https://medium.com/@padmalochanmurmu81">✍️Medium</a>
-  </div>
-  
-<br><br>
-  <!-- Resume Button -->
-  <div class="resume-section">
-    <a id="resume-link" href="#" target="_blank" rel="noopener noreferrer" class="resume-btn">
-  <span class="resume-icon">📄</span>
-  View My Resume
-</a>
-  </div>
-
-</section>
+    </div>
+    
+    <br><br>
+    
+    <div class="resume-section">
+      <a id="resume-link" href="https://drive.google.com/file/d/1ubt-Ac2KT6_71bXWnyswXdYRBwk3BOnv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-btn">
+        <span class="resume-icon">📄</span>
+        View My Resume
+      </a>
+    </div>
+  </section>
 
   <footer>
     <p>Built with ❤️ using HTML, CSS & JS</p>
