@@ -1,364 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Padmalochan Murmu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" sizes="any" href="assets/briefcase-line-icon.svg">
-  <link rel="apple-touch-icon" type="image/svg+xml" sizes="any" href="assets/briefcase-line-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">My Portfolio</div>
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#home">🏠 Home</a></li>
-        <li><a href="#about">🕵️About</a></li>
-        <li><a href="#experience">💼Experience</a></li>
-        <li><a href="#skills">🧠 Skills</a></li>
-        <li><a href="#projects">🗂️Projects</a></li>
-        <li><a href="#personal_projects">🗂️Personal Projects</a></li>
-        <li><a href="#certifications">🎖️Certifications</a></li>
-        <li><a href="#contact">📲Contact</a></li>
-      </ul>
+      
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#community_contributions">Community Contributions</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h1>I'm <span class="highlight">Padmalochan Murmu</span></h1>
-    <h2 class="typing">Junior Quality Analyst and Tech Enthusiast</h2>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <h1>I'm <span class="highlight">Padmalochan Murmu</span></h1>
+      <h2 class="typing">AI-Assisted SDET | Test Automation Engineer | Quality Engineering Enthusiast</h2>
+    </section>
 
-  <section id="about" class="about">
-    <h1><strong>🕵️About Me</strong></h1>
-    <p>
-      Dynamic and results-oriented QA Engineer with 3+ years of experience in Manual Testing, Automation Testing, Database Testing, and API Testing. Experienced in ensuring quality across web, mobile, and desktop applications within Healthcare, E-commerce, Social Media, E-learning, and Sports-tech domains.
-      <br><br>
-      Proficient in Selenium, Playwright, and Postman, with a strong understanding of Agile testing methodologies, I focus on identifying defects early, optimizing test coverage, and ensuring reliable product releases.
-      <br><br>
-      Known for a meticulous attention to detail and a commitment to continuous improvement, I collaborate closely with development, design, and product teams to transform requirements into stable, high-performing software—enhancing user experience and accelerating delivery cycles.
-    </p>
-  </section>
+    <section id="about" class="about">
+      <h2 class="section-title">🕵️ About Me</h2>
+      <div class="content-block">
+        <p class="about-lead">
+          I am an <strong>AI-assisted SDET</strong> with 3+ years of expertise in Test automation and Quality Engineering. 
+        </p>
+        <p>With 3+ years of experience in Software Testing and Automation, I have worked across diverse domains including Healthcare, E-commerce, E-learning, Productivity & Time Tracking, Social Media, and Sports Tech. My expertise lies in designing robust automation frameworks, improving test coverage, and enabling faster, more reliable releases.
+        </p>
+        <p>
+          What excites me most is the intersection of Quality Engineering and Artificial Intelligence. I actively leverage Generative AI to streamline test design, accelerate defect analysis, improve test data generation, and enhance overall testing efficiency. I believe AI-powered quality engineering is transforming how modern software is built, tested, and delivered.
+        </p>
+        <p>
+          I enjoy solving complex quality challenges, collaborating with cross-functional teams, and continuously exploring innovative ways to make testing smarter, faster, and more impactful.
+        </p>
+      </div>
+    </section>
 
-  <section id="experience" class="experience">
-    <h1><strong>💼Work Experience</strong></h1>
-    <div class="certification-grid">
-      <div class="certification-card">
-        <h3><strong>🏢Codebrew Labs</strong></h3>
-        <br>
-        <p>🌐Mohali, Punjab</p>
-        <p>🗓️November 2025 - Present</p>
-        <p>🛠Test Analyst</p>
+    <section id="experience" class="experience">
+      <h2 class="section-title">💼 Work Experience</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>🏢 Codebrew Labs</h3>
+          <p class="location">🌐 Mohali, Punjab</p>
+          <p class="date">🗓️ November 2025 - Present</p>
+          <p class="role">🛠 SDET/ Test Analyst</p>
+        </article>
+        <article class="card">
+          <h3>🏢 Sourcemash Technologies</h3>
+          <p class="location">🌐 Mohali, Punjab</p>
+          <p class="date">🗓️ November 2024 - September 2025</p>
+          <p class="role">🛠 Junior Quality Analyst</p>
+        </article>
+        <article class="card">
+          <h3>🏢 Appwrk IT Solutions</h3>
+          <p class="location">🌐 Mohali, Punjab</p>
+          <p class="date">🗓️ February 2023 - August 2024</p>
+          <p class="role">🛠 Quality Excellence Executive L1</p>
+        </article>
+        <article class="card">
+          <h3>🏢 Appwrk IT Solutions</h3>
+          <p class="location">🌐 Mohali, Punjab</p>
+          <p class="date">🗓️ April 2022 - February 2023</p>
+          <p class="role">🛠 Test Trainee</p>
+        </article>
       </div>
-      <div class="certification-card">
-        <h3><strong>🏢Sourcemash Technologies</strong></h3>
-        <br>
-        <p>🌐Mohali, Punjab</p>
-        <p>🗓️November 2024 - September 2025</p>
-        <p>🛠Junior Quality Analyst</p>
-      </div>
-      <div class="certification-card">
-        <h3><strong>🏢Appwrk IT Solutions</strong></h3>
-        <br>
-        <p>🌐Mohali, Punjab</p>
-        <p>🗓️February 2023 - August 2024</p>
-        <p>🛠Quality Excellence Executive L1</p>
-      </div>
-      <div class="certification-card">
-        <h3><strong>🏢Appwrk IT Solutions</strong></h3>
-        <br>
-        <p>🌐Mohali, Punjab</p>
-        <p>🗓️April 2022 - February 2023</p>
-        <p>🛠Test Trainee</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="skills" aria-label="Skills section">
-    <h1 class="section-heading"><strong>🧠 Skills</strong></h1>
-
-    <div class="skills-accordion" id="skillsAccordion" aria-live="polite">
-      <article class="acc-item" data-index="0" aria-expanded="false">
-        <button class="acc-header" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
-          <span class="acc-icon" aria-hidden="true">🧪</span>
-          <div class="acc-title-block">
+    <section id="skills" class="skills" aria-label="Skills section">
+      <h2 class="section-title">🧠 Skills</h2>
+      <div class="skills-accordion" id="skillsAccordion">
+        
+        <article class="acc-item" data-index="0" aria-expanded="false">
+          <button class="acc-header" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
+            <span class="acc-icon" aria-hidden="true">🧪</span>
             <div class="acc-title">Testing Types</div>
+            <span class="acc-chevron" aria-hidden="true">+</span>
+          </button>
+          <div id="acc-panel-0" class="acc-panel" role="region" aria-labelledby="acc-header-0">
+            <div class="acc-inner">
+              <ul>
+                <li>Functional, Integration, & System Testing</li>
+                <li>Cucumber (BDD), Test Driven Development</li>
+                <li>Regression & Compatibility Testing</li>
+                <li>API, Automation, & Database Testing</li>
+              </ul>
+            </div>
           </div>
-          <span class="acc-chevron" aria-hidden="true">▶</span>
-        </button>
+        </article>
 
-        <div id="acc-panel-0" class="acc-panel" role="region" aria-labelledby="acc-header-0" hidden>
-          <div class="acc-inner">
-            <ul>
-              <li>Functional Testing</li>
-              <li>Integration Testing</li>
-              <li>System Testing</li>
-              <li>Regression Testing</li>
-              <li>Compatibility Testing</li>
-              <li>API Testing</li>
-              <li>Automation Testing</li>
-              <li>Database Testing</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <article class="acc-item" data-index="1" aria-expanded="false">
-        <button class="acc-header" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
-          <span class="acc-icon" aria-hidden="true">📋</span>
-          <div class="acc-title-block">
+        <article class="acc-item" data-index="1" aria-expanded="false">
+          <button class="acc-header" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
+            <span class="acc-icon" aria-hidden="true">📋</span>
             <div class="acc-title">Test Planning & Execution</div>
+            <span class="acc-chevron" aria-hidden="true">+</span>
+          </button>
+          <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1">
+            <div class="acc-inner">
+              <ul>
+                <li>Test Plan, Test Case, User Stories, Use case template creation</li>
+                <li>Regression checklist & release criteria</li>
+                <li>Bug lifecycle, SDLC and STLC</li>
+              </ul>
+            </div>
           </div>
-          <span class="acc-chevron" aria-hidden="true">▶</span>
-        </button>
+        </article>
 
-        <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1" hidden>
-          <div class="acc-inner">
-            <ul>
-              <li>Test Plan, Test Case, User Stories, Use case template creation</li>
-              <li>Regression checklist & release criteria</li>
-              <li>Bug lifecycle, SDLC and STLC</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <article class="acc-item" data-index="2" aria-expanded="false">
-        <button class="acc-header" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
-          <span class="acc-icon" aria-hidden="true">📊</span>
-          <div class="acc-title-block">
+        <article class="acc-item" data-index="2" aria-expanded="false">
+          <button class="acc-header" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
+            <span class="acc-icon" aria-hidden="true">📊</span>
             <div class="acc-title">Project Management & Defect Tracking</div>
+            <span class="acc-chevron" aria-hidden="true">+</span>
+          </button>
+          <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2">
+            <div class="acc-inner">
+              <ul>
+                <li>JIRA & Trello</li>
+                <li>Mantis</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
           </div>
-          <span class="acc-chevron" aria-hidden="true">▶</span>
-        </button>
+        </article>
 
-        <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2" hidden>
-          <div class="acc-inner">
-            <ul>
-              <li>JIRA</li>
-              <li>Trello</li>
-              <li>Mantis</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <article class="acc-item" data-index="3" aria-expanded="false">
-        <button class="acc-header" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
-          <span class="acc-icon" aria-hidden="true">⚙️</span>
-          <div class="acc-title-block">
+        <article class="acc-item" data-index="3" aria-expanded="false">
+          <button class="acc-header" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
+            <span class="acc-icon" aria-hidden="true">⚙️</span>
             <div class="acc-title">Tools & Technologies</div>
+            <span class="acc-chevron" aria-hidden="true">+</span>
+          </button>
+          <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3">
+            <div class="acc-inner">
+              <ul>
+                <li>Selenium: Java - TestNG </li>
+                <li> Playwright: Javascript/TypeScript </li>
+                <li> GitHub Actions: CI/CD </li>
+                <li> GitHub: version control </li>
+                <li> Postman and Swagger UI: API Testing </li>
+                <li> MySQL: Database Testing </li>
+                <li> BrowserStack: Compatibility Testing </li>
+                <li> CRM: MS Dynamics 365 </li>
+                <li> Payment Gateways: Chase, Stripe </li>
+                <li> Generative AI for Test strategy & Model Context Protocol (MCP) workflows </li>
+              </ul>
+            </div>
           </div>
-          <span class="acc-chevron" aria-hidden="true">▶</span>
-        </button>
+        </article>
 
-        <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3" hidden>
-          <div class="acc-inner">
-            <ul>
-              <li>GitHub (version control)</li>
-              <li>Postman and Swagger UI (API Testing)</li>
-              <li>MySQL (Database Testing)</li>
-              <li>Mobile Wallets: Apple and Google</li>
-              <li>BrowserStack (compatibility testing)</li>
-              <li>Payment Gateways (Chase / JP Morgan)</li>
-              <li>CRM: Dynamics 365</li>
-              <li>Generative AI for test strategy</li>
-              <li>AR Kit: Apple and Google</li>
-            </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">🗂️ Featured Projects</h2>
+      <div class="card-grid collapsed" id="featured-grid">
+        
+        <article class="card">
+          <h3>Saudi Kingdom: School-League</h3>
+          <div class="project-badges">
+            <a href="https://school-al.dawri-madaris.gg/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+            <a href="https://play.google.com/store/search?q=dawri%20al%20madaris&c=apps&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
+            <a href="https://apps.apple.com/in/app/dawri-al-madaris/id6743482846" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
           </div>
-        </div>
-      </article>
-    </div>
+          <p><strong>⚽ Domain: </strong>Sports Tech (Web, and Mobile).</p>
+        </article>
 
-    <script>
-      (function(){
-        const accordion = document.getElementById('skillsAccordion');
-        if(!accordion) return;
-        const items = Array.from(accordion.querySelectorAll('.acc-item'));
-        const headers = items.map(it => it.querySelector('.acc-header'));
-        const panels = items.map(it => it.querySelector('.acc-panel'));
+        <article class="card">
+          <h3>Larson-Juhl</h3>
+          <div class="project-badges">
+            <a href="https://shop.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+            <a href="https://play.google.com/store/search?q=larson+juhl&c=apps&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
+            <a href="https://apps.apple.com/in/app/larson-juhl/id6448109646" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+          </div>
+          <p><strong>🛒 Domain: </strong>B2B E-commerce (Web, Native).</p>
+        </article>
 
-        function collapseAll(except = -1){
-          items.forEach((it, idx) => {
-            if(idx === except) return;
-            if(it.getAttribute('aria-expanded') === 'true'){
-              const panel = panels[idx];
-              panel.style.height = panel.scrollHeight + 'px';
-              requestAnimationFrame(()=> { panel.style.transition = 'height 260ms ease'; panel.style.height = '0px'; });
-              it.setAttribute('aria-expanded','false');
-              it.querySelector('.acc-header').setAttribute('aria-expanded','false');
-              setTimeout(()=> { panel.hidden = true; panel.style.transition=''; panel.style.height=''; }, 300);
-            }
-          });
-        }
+        <article class="card">
+          <h3>LJ-Design Studio</h3>
+          <div class="project-badges">
+            <a href="https://designstudio.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+            <a href="https://play.google.com/store/apps/details?id=com.larsonjuhl.designstudio&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
+            <a href="https://apps.apple.com/in/app/lj-design-studio/id6745772677" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+          </div>
+          <p><strong>🛒 Domain: </strong>B2B E-commerce (Web, Native).</p>
+        </article>
 
-        function toggle(index){
-          const it = items[index], panel = panels[index];
-          const open = it.getAttribute('aria-expanded') === 'true';
-          if(open){
-            panel.style.height = panel.scrollHeight + 'px';
-            requestAnimationFrame(()=> { panel.style.transition = 'height 260ms ease'; panel.style.height = '0px'; });
-            it.setAttribute('aria-expanded','false');
-            it.querySelector('.acc-header').setAttribute('aria-expanded','false');
-            setTimeout(()=> { panel.hidden = true; panel.style.transition=''; panel.style.height=''; }, 300);
-          } else {
-            collapseAll(index);
-            panel.hidden = false;
-            panel.style.height = '0px';
-            const target = panel.scrollHeight;
-            requestAnimationFrame(()=> { panel.style.transition = 'height 360ms cubic-bezier(.2,.9,.2,1)'; panel.style.height = target + 'px'; });
-            it.setAttribute('aria-expanded','true');
-            it.querySelector('.acc-header').setAttribute('aria-expanded','true');
-            setTimeout(()=> { panel.style.transition=''; panel.style.height=''; }, 420);
-            const rect = it.getBoundingClientRect();
-            if(rect.top < 60 || rect.bottom > (window.innerHeight - 60)){
-              it.scrollIntoView({behavior:'smooth', block:'nearest'});
-            }
-          }
-        }
+        <article class="card">
+          <h3>Clockdiary</h3>
+          <div class="project-badges">
+            <a href="https://app.clockdiary.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+          </div>
+          <p><strong>⏰ Domain: </strong>Time Tracking and Productivity (Web, Desktop).</p>
+        </article>
 
-        headers.forEach((h, i) => {
-          h.addEventListener('click', () => toggle(i));
-          h.addEventListener('keydown', (e) => {
-            const k = e.key;
-            if(k === 'Enter' || k === ' '){ e.preventDefault(); toggle(i); }
-            if(['ArrowDown','ArrowUp','Home','End'].includes(k)){
-              e.preventDefault();
-              let next;
-              if(k === 'ArrowDown') next = (i + 1) % headers.length;
-              if(k === 'ArrowUp') next = (i - 1 + headers.length) % headers.length;
-              if(k === 'Home') next = 0;
-              if(k === 'End') next = headers.length - 1;
-              headers[next].focus();
-            }
-          });
-        });
-      })();
-    </script>
-  </section>
-  <section id="projects" class="projects">
-    <h1><strong>🗂️Featured Projects</strong></h1>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3><strong>🗂️Grintafy: School-League Project</strong></h3>
-        <br>
-        <p>Sports Tech (Web, and Mobile).</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️Larson-Juhl</strong></h3>
-        <br>
-        <p>B2B E-commerce (Web, Native, CRM Integration).</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️LJ- Design Studio</strong></h3>
-        <br>
-        <p>B2B E-commerce (Web, Native)</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️Clockdiary</strong></h3>
-        <br>
-        <p>Time Tracking and Productivity (Web, Desktop)</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️Nemesis</strong></h3>
-        <br>
-        <p>Social Media, Music Streaming, and E-commerce (Native)</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️OSCE- Connect</strong></h3>
-        <br>
-        <p>E- Learning (Web)</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️Get Practice Growth</strong></h3>
-        <br>
-        <p>Healthcare - CMS (Web)</p>
-      </div>
-    </div>
-  </section>
+        <article class="card">
+          <h3>Nemesis</h3>
+          <div class="project-badges">
+             <a href="https://play.google.com/store/apps/details?id=com.nemesisvs&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
+             <a href="https://apps.apple.com/in/app/nemesis-vs/id6757146828" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+          </div>
+          <p><strong>🌐 Domain: </strong>Social Media, Music Streaming, and E-commerce (Native).</p>
+        </article>
 
-  <section id="personal_projects" class="personal_projects">
-    <h1><strong>🗂️Personal Projects</strong></h1>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3><strong>🗂️GreenKart</strong></h3>
-        <br>
-        <p>End-to-end automation framework of E-commerce app, using Selenium and TestNG framework</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️FreeCRM</strong></h3>
-        <br>
-        <p>Simple Automation framework to run, fail a test, and capture screenshots for failed Test-cases, using Selenium and TestNG framework</p>
-      </div>
-      <div class="project-card">
-        <h3><strong>🗂️W3Schools</strong></h3>
-        <br>
-        <p>Simple framework to automate and execute the SQL query on W3School website, using Selenium and TestNG framework</p>
-      </div>
-    </div>
-  </section>
+        <article class="card">
+          <h3>OSCE- Connect</h3>
+          <div class="project-badges">
+             <a href="http://app.osceconnect.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+          </div>
+          <p><strong>🎓 Domain: </strong>E- Learning (Web).</p>
+        </article>
 
-  <section id="certifications" class="certifications">
-    <h1><strong>🎖️Certifications</strong></h1>
-    <div class="certification-grid">
-      <div class="certification-card">
-        <h3><strong>🏅Manual Testing & Classic Selenium</strong></h3>
-        <br>
-        <p>💻QSpiders Software Training Institute, and Udemy</p>
       </div>
-      <div class="certification-card">
-        <h3><strong>🏅Playwright Automation (JavaScript & TypeScript)</strong></h3>
-        <br>
-        <p>💻Udemy</p>
-      </div>
-      <div class="certification-card">
-        <h3><strong>🏅Software Testing with Generative AI</strong></h3>
-        <br>
-        <p>💻Simplilearn</p>
-      </div>
-      <div class="certification-card">
-        <h3><strong>🏅GenAI & AI Agents for QA Automation | Copilot & Claude code</strong></h3>
-        <br>
-        <p>💻Udemy</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <h1><strong>Let's Connect📲!</strong></h1>
-
-    <div class="social-links">
-      <div class="top-row">
-        <a class="gmail" href="mailto:padmalochanmurmu81@gmail.com">📧Gmail</a>
-        <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba">💼LinkedIn</a>
-        <a href="https://github.com/PadmalochanMurmu12">🐙GitHub</a>
+      <div class="view-all-container">
+        <button class="view-all-btn" data-target="featured-grid">View All Projects +</button>
       </div>
-      <a class="medium" href="https://medium.com/@padmalochanmurmu81">✍️Medium</a>
-    </div>
+    </section>
+
+    <!-- COMMUNITY CONTRIBUTIONS / HOBBY PROJECTS -->
+    <section id="community_contributions" class="community_contributions">
+      <h2 class="section-title">🛠️ Community Contributions</h2>
+      <div class="card-grid" id="community-grid">
+        
+        <!-- Project 1: FoodKart -->
+        <article class="card">
+          <h3>FoodKart- Playwright Automation</h3>
+          <div class="project-badges">
+             <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/FoodKart-Playwright-Automation" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" title="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+             <button class="read-more-btn" data-modal="modal-foodkart">Know More</button>
+          </div>
+        </article>
+
+        <!-- Project 2: Swag Lab -->
+        <article class="card">
+          <h3>Swag Lab- Selenium Automation</h3>
+          <div class="project-badges">
+             <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/Swag_Lab_Automation" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" title="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+             <button class="read-more-btn" data-modal="modal-swaglab">Know More</button>
+          </div>
+        </article>
+      </div>
+    </section>
     
-    <br><br>
-    
-    <div class="resume-section">
-      <a id="resume-link" href="https://drive.google.com/file/d/1ubt-Ac2KT6_71bXWnyswXdYRBwk3BOnv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-btn">
-        <span class="resume-icon">📄</span>
-        View My Resume
-      </a>
-    </div>
-  </section>
+    <dialog id="modal-foodkart" class="project-modal">
+      <div class="modal-header">
+        <h3>FoodKart- Playwright Automation</h3>
+        <button class="close-modal" aria-label="Close modal">✖</button>
+      </div>
+      <div class="modal-content">
+        <p><strong>🎯 Objective</strong><br>
+        Architected a scalable, self-running quality assurance framework to validate critical user journeys—from menu browsing to final checkout. Built with a Behavior-Driven Development (BDD) approach so product managers and non-technical stakeholders can read the test scenarios in plain English, while the engine ensures zero-downtime deployments.</p>
+        <p><strong>⚙️ Tech Stack & Architecture</strong></p>
+        <ul>
+          <li><strong>Core Engine:</strong> Playwright</li>
+          <li><strong>Language:</strong> TypeScript (for strict type-checking and maintainability)</li>
+          <li><strong>Design Pattern:</strong> Cucumber (BDD) for plain-English Gherkin syntax</li>
+          <li><strong>Infrastructure:</strong> GitHub Actions (CI/CD integration for automated execution on every pull request)</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <!-- Swag Lab Modal -->
+    <dialog id="modal-swaglab" class="project-modal">
+      <div class="modal-header">
+        <h3>Swag Lab- Selenium Automation</h3>
+        <button class="close-modal" aria-label="Close modal">✖</button>
+      </div>
+      <div class="modal-content">
+        <p><strong>🎯 Objective</strong><br>
+        Engineered a robust, scalable automated testing solution to validate critical e-commerce flows including user authentication, inventory validation, and cart checkout processing. Utilized a strict Test-Driven Development (TDD) methodology to ensure high reliability and immediate regression detection.</p>
+        <p><strong>⚙️ Tech Stack & Architecture</strong></p>
+        <ul>
+          <li><strong>Core Engine:</strong> Selenium WebDriver</li>
+          <li><strong>Language:</strong> Java</li>
+          <li><strong>Design Pattern:</strong> TestNG (TDD Approach)</li>
+          <li><strong>Infrastructure:</strong> GitHub Actions CI/CD Pipeline</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <section id="certifications" class="certifications">
+      <h2 class="section-title">🎖️ Certifications</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>🏅 Software Testing Masterclass-JIRA | AGILE | API Testing</h3>
+          <p>💻 <a href="https://drive.google.com/file/d/1AhvhMWJqE2kmQTtv1TlP_Cc8sbstz7dy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">QSpiders</a></p>
+          <p>💻 <a href="https://drive.google.com/file/d/14cIKaJOmEoi1vArv9uuLHeZo46ey4IVp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
+        </article>
+        <article class="card">
+          <h3>🏅 Playwright Automation (JS & TS)</h3>
+          <p>💻 <a href="https://drive.google.com/file/d/15TBtr-G2mJFzPjS9ZPQLAWAIAg8jPpcO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
+        </article>
+        <article class="card">
+          <h3>🏅 Software Testing with Generative AI</h3>
+          <p>💻 <a href="https://drive.google.com/file/d/1UeYI639MpUhrv1Gtos8vlb73dHXHJI-N/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Simplilearn</a></p>
+        </article>
+        <article class="card">
+          <h3>🏅 GenAI & AI Agents for QA Automation</h3>
+          <p>💻 <a href="https://drive.google.com/file/d/1cxcsaxxfDWeRfkCFR-v4n_7a6mXg6fpe/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Let's Connect 📲</h2>
+      <div class="social-links">
+        <a href="mailto:padmalochanmurmu81@gmail.com">📧 Gmail</a>
+        <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/PadmalochanMurmu12" target="_blank">🐙 GitHub</a>
+        <a href="https://medium.com/@padmalochanmurmu81" target="_blank">✍️ Medium</a>
+      </div>
+      <div class="resume-section">
+        <a href="https://drive.google.com/file/d/1FWsqphTxIN8I_f4KF3K8Xme0gPr-5lw7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-btn">
+          <span class="resume-icon">📄</span> View My Resume
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Built with ❤️ using HTML, CSS & JS</p>
+    <div class="footer-content">
+      <p>Built with <span class="heart">❤️</span> using HTML, CSS, & JS</p>
+      <p class="copyright">&copy; <span id="current-year">2026</span> Padmalochan Murmu. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
