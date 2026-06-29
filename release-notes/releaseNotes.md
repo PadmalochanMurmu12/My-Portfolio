@@ -1,5 +1,17 @@
 # 🚀 Release Notes: Personal Portfolio Website
 
+## [v1.2.1] — 2026-04-27
+
+### 📄 Updated Resume and Featured Projects
+
+A minor functional enhancement of the Resume and Featured Project typos
+
+#### 🌟 What's New?
+
+* **Section Updates:** Published the updated Resume and Updated the project sections.
+
+---
+
 ## [v1.2.0] — 2026-06-10
 
 ### 🔄 Major UI/UX Overhaul & Theme Engine Integration
