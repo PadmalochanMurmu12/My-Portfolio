@@ -9,6 +9,15 @@ This release marks a complete structural and design refactor of the contact sect
 #### 🌟 What's New?
 
 * **Replaced the Static Fancy Icons with the Clean and Professional badges:** Replaced the static icons with professional badges with a new mode of reaching out: WhatsApp
+## [v1.2.1] — 2026-04-27
+
+### 📄 Updated Resume and Featured Projects
+
+A minor functional enhancement of the Resume and Featured Project typos
+
+#### 🌟 What's New?
+
+* **Section Updates:** Published the updated Resume and Updated the project sections.
 
 ---
 
