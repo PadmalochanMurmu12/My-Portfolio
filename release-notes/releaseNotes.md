@@ -1,5 +1,17 @@
 # 🚀 Release Notes: Personal Portfolio Website
 
+## [v1.3.0] — 2026-07-21
+
+### 🔄 Major UI/UX Overhaul on Contact Section svg badges
+
+This release marks a complete structural and design refactor of the contact section badges.
+
+#### 🌟 What's New?
+
+* **Replaced the Static Fancy Icons with the Clean and Professional badges:** Replaced the static icons with professional badges with a new mode of reaching out: WhatsApp
+
+---
+
 ## [v1.2.0] — 2026-06-10
 
 ### 🔄 Major UI/UX Overhaul & Theme Engine Integration

@@ -327,38 +327,185 @@ section {
 
 .acc-inner ul { margin-left: 2rem; line-height: 1.6; }
 
-/* Contact & Buttons */
+/* ========================================
+   MODAL & READ MORE BUTTON (DESKTOP)
+   ======================================== */
+.read-more-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2);
+}
+
+.read-more-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 170, 255, 0.4);
+}
+
+.project-modal {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: var(--nav-bg);
+  color: var(--text-main);
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  margin: auto; 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.project-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.modal-header h3 {
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.5rem 1.8rem;
+  border-radius: 30px;
+  margin: 0;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2);
+}
+
+.close-modal {
+  position: absolute;
+  right: 1.5rem; 
+  top: 1.5rem;   
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10;   
+}
+
+.close-modal:hover {
+  color: #ff4757;
+}
+
+.modal-content p {
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.modal-content ul {
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   CERTIFICATIONS & CONTACT
+   ======================================== */
+.cert-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.cert-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+}
+
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 0 auto 2rem auto;
 }
 
+/* 2. ONLY ONE declaration for the links. This perfectly centers the badge inside your blue pill. */
 .social-links a {
-  text-decoration: none;
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Separates the SVG from the text */
+  padding: 0.6rem 1.4rem; /* Restores pill shape */
   border: 1px solid var(--accent);
-  padding: 0.6rem 1.2rem;
   border-radius: 30px;
+  text-decoration: none;
+  color: var(--accent); /* Sets text and SVG color */
   transition: all 0.3s ease;
 }
 
+/* 3. The hover effect that fills the pill with blue */
 .social-links a:hover {
   background: var(--accent);
-  color: #fff;
+  color: #ffffff; 
+  transform: translateY(-4px);
 }
 
-.resume-section { text-align: center; }
-.resume-btn {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  padding: 1rem 2rem;
-  background: var(--accent); color: white;
-  text-decoration: none; border-radius: 30px;
-  font-weight: 600; transition: all 0.3s ease;
+/* 4. The container for the resume button, properly centered */
+.resume-section { 
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.resume-btn:hover { background: var(--accent-hover); transform: translateY(-3px); }
+
+/* 5. The resume button itself */
+.resume-btn {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--accent); 
+  color: white;
+  text-decoration: none; 
+  border-radius: 30px;
+  font-weight: 600; 
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.resume-btn:hover { 
+  background: var(--accent-hover); 
+  transform: translateY(-4px); 
+}
+
+.cert-link,
+.cert-link:visited {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.cert-link:hover,
+.cert-link:focus {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 /* ========================================
    FOOTER
