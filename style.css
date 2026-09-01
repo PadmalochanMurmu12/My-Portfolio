@@ -91,6 +91,25 @@ section {
 }
 
 /* ========================================
+   SVG ICON UTILITIES
+   ======================================== */
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: text-bottom;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+/* ========================================
    NAVIGATION
    ======================================== */
 .navbar {
@@ -130,9 +149,13 @@ section {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: transform 0.2s ease, color 0.3s ease;
 }
-.theme-toggle:hover { transform: scale(1.1); }
+.theme-toggle:hover { transform: scale(1.1); color: var(--accent); }
 
 .nav-links {
   list-style: none;
@@ -212,6 +235,88 @@ section {
   color: var(--text-main); 
   font-weight: 700; 
   margin-bottom: 0.5rem; 
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Experience Card Alignment & Typography */
+.exp-card {
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 1.75rem;
+  gap: 1.25rem;
+}
+
+.exp-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.exp-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start; 
+  gap: 0.6rem;
+  line-height: 1.35;
+}
+
+.exp-role .icon {
+  flex-shrink: 0; 
+  margin-top: 0.15em; 
+}
+
+.exp-company {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-main);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.exp-company .icon {
+  flex-shrink: 0;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  width: 100%;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06); 
+}
+
+[data-theme="light"] .exp-meta {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.exp-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.exp-meta .icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.meta-dot {
+  color: var(--accent);
+  opacity: 0.6;
 }
 
 /* ========================================
@@ -277,18 +382,17 @@ section {
   
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers the icon horizontally */
-  text-align: center;  /* Centers the heading and paragraph text */
+  align-items: center;
+  text-align: center;
 }
 
-/* Light mode specific border tweak for readability */
 [data-theme="light"] .about-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-card:hover {
   transform: translateY(-3px);
-  border-color: var(--accent); /* Subtle highlight on hover */
+  border-color: var(--accent);
 }
 
 .about-card-icon {
@@ -390,7 +494,12 @@ section {
   text-align: left;
 }
 
-.acc-icon { margin-right: 1rem; font-size: 1.3rem; }
+.acc-icon { 
+  margin-right: 1rem; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Dynamic Expand/Collapse Icons */
 .acc-chevron { 
@@ -483,6 +592,7 @@ section {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 1.5rem;
+  position: relative;
 }
 
 .modal-header h3 {
@@ -502,7 +612,9 @@ section {
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: color 0.3s ease;
   z-index: 10;   
@@ -536,7 +648,8 @@ section {
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.cert-link:hover {
+.cert-link:hover,
+.cert-link:focus {
   color: var(--accent-hover);
   text-decoration: underline;
   text-underline-offset: 4px; 
@@ -552,35 +665,31 @@ section {
   margin: 0 auto 2rem auto;
 }
 
-/* 2. ONLY ONE declaration for the links. This perfectly centers the badge inside your blue pill. */
 .social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* Separates the SVG from the text */
-  padding: 0.6rem 1.4rem; /* Restores pill shape */
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
   border: 1px solid var(--accent);
   border-radius: 30px;
   text-decoration: none;
-  color: var(--accent); /* Sets text and SVG color */
+  color: var(--accent);
   transition: all 0.3s ease;
 }
 
-/* 3. The hover effect that fills the pill with blue */
 .social-links a:hover {
   background: var(--accent);
   color: #ffffff; 
   transform: translateY(-4px);
 }
 
-/* 4. The container for the resume button, properly centered */
 .resume-section { 
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-/* 5. The resume button itself */
 .resume-btn {
   display: inline-flex; 
   align-items: center; 
@@ -598,21 +707,6 @@ section {
 .resume-btn:hover { 
   background: var(--accent-hover); 
   transform: translateY(-4px); 
-}
-
-.cert-link,
-.cert-link:visited {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.cert-link:hover,
-.cert-link:focus {
-  color: var(--accent-hover);
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 /* ========================================
@@ -637,19 +731,15 @@ footer {
 }
 
 .footer-content .heart {
-  color: #ff4757; 
+  color: #ff4757;
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.footer-content .heart:hover {
-  transform: scale(1.2);
-}
-
-.footer-content .copyright {
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin-top: 0.5rem;
+.footer-content .heart svg {
+  vertical-align: middle; 
+  position: relative;
+  top: -2px; 
 }
 
 /* ========================================

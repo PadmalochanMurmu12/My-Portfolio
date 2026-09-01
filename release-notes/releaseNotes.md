@@ -1,5 +1,26 @@
 # 🚀 Release Notes: Personal Portfolio Website
 
+## [v1.3.1] — 2026-09-01
+
+### 🎨 SVG Standardization & Work Experience Layout Refactor
+
+This patch focuses on eliminating legacy static emojis across the portfolio, standardizing vector iconography, and refactoring the layout hierarchy of the experience section.
+
+#### 🌟 Key Improvements & Bug Fixes
+
+* **Sitewide Vector Icon Integration:** Replaced all OS-dependent static emojis with theme-reactive, scalable SVG icons across the About, Experience, Skills, Projects, Certifications, and Footer sections.
+* **Work Experience Card Restructure:**
+  * Inverted information hierarchy to prioritize **Role → Company → Metadata** for immediate scannability.
+  * Switched alignment to a consistent left-aligned flex layout, removing asymmetrical line-wrapping.
+  * Added anchored metadata rows pairing tenure and location with dedicated vector indicators.
+* **Flexbox & Icon Shrink Fixes:**
+  * Fixed an issue where multi-line text wrapping squished role SVGs by adding explicit `flex-shrink: 0` constraints and baseline optical nudges.
+  * Corrected vertical baseline alignment for the footer heart icon, preventing it from floating above the text line.
+  * Resolved empty vertical spacing across cards by removing uneven `space-between` stretching.
+* **Styles & Codebase Hygiene:** Cleaned up duplicate link style declarations and streamlined global SVG utility classes for consistent dark/light theme inheritance.
+
+---
+
 ## [v1.3.0] — 2026-07-21
 
 ### 🔄 Major UI/UX Overhaul on Contact Section svg badges
