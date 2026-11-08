@@ -1,5 +1,13 @@
 # 🚀 Release Notes: Personal Portfolio Website
 
+[v1.3.2] — 2026-11-08
+📄 Resume Link Update
+
+This patch includes a minor update to the portfolio's resume link to ensure visitors can access the latest version of the resume.
+
+🌟 Key Improvements & Bug Fixes
+Resume Link Update: Updated the resume link to point to the latest version of the resume, ensuring visitors can access the correct document directly from the portfolio.
+
 ## [v1.3.1] — 2026-09-01
 
 ### 🎨 SVG Standardization & Work Experience Layout Refactor
