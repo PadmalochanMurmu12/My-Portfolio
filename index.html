@@ -1,228 +1,680 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" class="dark" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Padmalochan Murmu | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <title>Padmalochan Murmu | AI-Assisted QA Automation Engineer</title>
+  <meta name="description" content="Portfolio of Padmalochan Murmu - AI-Assisted QA Automation Engineer with 3+ years experience specializing in Playwright, Selenium, Generative AI & MCP testing workflows." />
+
+  <!-- Preconnect & Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="./assets/briefcase-line-icon.svg">
   <link rel="apple-touch-icon" type="image/png" href="./assets/briefcase-line-icon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            accent: {
+              cyan: '#06b6d4',
+              indigo: '#6366f1',
+              emerald: '#10b981',
+              violet: '#8b5cf6',
+            }
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 30px -5px rgba(6, 182, 212, 0.35)',
+            'glow-brand': '0 0 35px -5px rgba(14, 165, 233, 0.4)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Modern Styling Engine -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">My Portfolio</div>
+<body class="bg-slate-50 dark:bg-[#07090e] text-slate-900 dark:text-slate-100 font-sans selection:bg-brand-500/20 selection:text-brand-500 antialiased min-h-screen relative overflow-x-hidden transition-colors duration-300">
+
+  <!-- Ambient Background Lighting Mesh (Watermelon / Modern UI style) -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Modern Floating Island Navigation -->
+  <header class="fixed top-3 sm:top-5 inset-x-0 z-50 px-3 sm:px-6 max-w-6xl mx-auto">
+    <nav class="navbar backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl sm:rounded-full px-4 sm:px-6 py-2.5 sm:py-3 shadow-lg shadow-black/5 dark:shadow-black/40 flex items-center justify-between transition-all duration-300">
       
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#community_contributions">Community Contributions</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        
-        <div class="nav-controls">
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
-          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
+      <!-- Brand Logo / Badge -->
+      <a href="#home" class="logo group flex items-center gap-3 text-decoration-none">
+        <span class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl sm:rounded-full bg-gradient-to-tr from-brand-600 via-sky-500 to-accent-cyan flex items-center justify-center text-white font-extrabold text-sm sm:text-base shadow-md shadow-brand-500/25 group-hover:scale-105 transition-transform duration-300">
+          PM
+        </span>
+        <div class="flex flex-col">
+          <span class="font-bold text-sm sm:text-base tracking-tight text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+            Padmalochan Murmu
+          </span>
+          <span class="text-[10px] sm:text-[11px] font-mono text-slate-500 dark:text-slate-400 -mt-0.5">
+            QA Automation &bull; AI
+          </span>
         </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-right hidden lg:flex items-center gap-1 xl:gap-2">
+        <ul class="nav-links flex items-center gap-1 text-sm font-medium">
+          <li><a href="#home" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Home</a></li>
+          <li><a href="#about" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">About</a></li>
+          <li><a href="#experience" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Experience</a></li>
+          <li><a href="#skills" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Skills</a></li>
+          <li><a href="#projects" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Projects</a></li>
+          <li><a href="#community_contributions" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Open Source</a></li>
+          <li><a href="#certifications" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Certs</a></li>
+          <li><a href="#contact" class="nav-link px-3 py-1.5 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-200">Contact</a></li>
+        </ul>
       </div>
+
+      <!-- Action Controls (Theme Toggle & Mobile Menu) -->
+      <div class="nav-controls flex items-center gap-2">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle p-2 sm:p-2.5 rounded-xl sm:rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/90 dark:hover:bg-slate-700 text-slate-700 dark:text-amber-300 border border-slate-200 dark:border-slate-700/80 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-500/50" aria-label="Toggle light and dark mode">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="sun-icon w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-500 rotate-0 dark:rotate-0 block dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="moon-icon w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-500 rotate-0 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger lg:hidden p-2 sm:p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700/80 focus:outline-none focus:ring-2 focus:ring-brand-500/50" aria-label="Toggle menu" aria-expanded="false">
+          <div class="hamburger-box w-5 h-4 relative flex flex-col justify-between">
+            <span class="w-full h-0.5 bg-current rounded-full transition-transform duration-300"></span>
+            <span class="w-full h-0.5 bg-current rounded-full transition-opacity duration-300"></span>
+            <span class="w-full h-0.5 bg-current rounded-full transition-transform duration-300"></span>
+          </div>
+        </button>
+      </div>
+
     </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav lg:hidden fixed top-[72px] sm:top-[80px] inset-x-3 sm:inset-x-6 backdrop-blur-2xl bg-white/95 dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-6 shadow-2xl shadow-black/20 transform -translate-y-4 opacity-0 pointer-events-none transition-all duration-300">
+      <ul class="flex flex-col gap-2 font-medium">
+        <li><a href="#home" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a></li>
+        <li><a href="#about" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">About Me</a></li>
+        <li><a href="#experience" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Work Experience</a></li>
+        <li><a href="#skills" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Skills & Arsenal</a></li>
+        <li><a href="#projects" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Featured Projects</a></li>
+        <li><a href="#community_contributions" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Community Contributions</a></li>
+        <li><a href="#certifications" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Certifications</a></li>
+        <li><a href="#contact" class="mobile-link block px-4 py-2.5 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-brand-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contact & Resume</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <h1>I'm <span class="highlight">Padmalochan Murmu</span></h1>
-      <h2 class="hero-subtitle">AI-Assisted QA Automation Engineer | Tech Enthusiast</h2>
+  <main class="relative z-10 pt-24 sm:pt-28">
+
+    <!-- ========================================================= -->
+    <!-- HERO SECTION: Modern, High-Impact & Compact -->
+    <!-- ========================================================= -->
+    <section id="home" class="hero max-w-6xl mx-auto px-4 sm:px-6 pt-4 sm:pt-8 pb-8 sm:pb-12 text-center flex flex-col items-center">
+      
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs sm:text-sm font-semibold mb-4 shadow-sm shadow-emerald-500/10 animate-fade-in">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        Available for QA Automation & AI Engineering Projects
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12] max-w-4xl mb-4">
+        Hi, I'm <span class="gradient-text bg-gradient-to-r from-sky-500 via-indigo-500 to-teal-400 dark:from-sky-400 dark:via-brand-400 dark:to-teal-300 bg-clip-text text-transparent">Padmalochan Murmu</span>
+      </h1>
+
+      <!-- Role & Subtitle -->
+      <h2 class="hero-subtitle text-base sm:text-xl md:text-2xl font-semibold text-slate-700 dark:text-slate-200 max-w-3xl mb-4 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+        <span>AI-Assisted QA Automation Engineer</span>
+        <span class="text-brand-500 dark:text-brand-400 font-mono text-base sm:text-xl font-normal">&bull;</span>
+        <span class="text-slate-500 dark:text-slate-400 font-medium">Tech Enthusiast</span>
+      </h2>
+
+      <!-- Bio Pitch -->
+      <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
+        Specializing in scalable test automation frameworks, Playwright, Selenium, and architecting cutting-edge Agentic AI workflows to shift testing left and accelerate release velocity.
+      </p>
+
+      <!-- Primary Action CTAs -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+        <a href="#experience" class="btn-primary group inline-flex items-center gap-2 px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-brand-600 to-sky-500 hover:from-brand-500 hover:to-sky-400 text-white font-semibold text-sm sm:text-base shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all duration-300">
+          <span>Explore Experience</span>
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1IevCI-b6qt8crlRCMsQegF59iN3bcgYY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary inline-flex items-center gap-2 px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-white dark:bg-slate-800/90 hover:bg-slate-100 dark:hover:bg-slate-700/90 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700/80 font-semibold text-sm sm:text-base shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+          <svg class="w-4 h-4 text-brand-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>View Resume</span>
+        </a>
+
+        <a href="#contact" class="btn-ghost inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-white font-medium text-sm sm:text-base hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all duration-200">
+          <span>Let's Connect</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Bento Bar -->
+      <div class="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-left">
+        <div class="stat-card backdrop-blur-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-sm hover:border-brand-500/40 transition-colors">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400 font-mono">3+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mt-0.5">Years Experience</div>
+          <div class="text-[11px] text-slate-500 dark:text-slate-400">Quality Engineering</div>
+        </div>
+
+        <div class="stat-card backdrop-blur-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-sm hover:border-brand-500/40 transition-colors">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400 font-mono">6+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mt-0.5">Domains Shipped</div>
+          <div class="text-[11px] text-slate-500 dark:text-slate-400">Health, FinTech, E-com</div>
+        </div>
+
+        <div class="stat-card backdrop-blur-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-sm hover:border-brand-500/40 transition-colors">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400 font-mono">100%</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mt-0.5">Shift-Left Focus</div>
+          <div class="text-[11px] text-slate-500 dark:text-slate-400">Day-one zero defects</div>
+        </div>
+
+        <div class="stat-card backdrop-blur-xl bg-white/70 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-4 sm:p-5 shadow-sm hover:border-brand-500/40 transition-colors">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-600 dark:text-brand-400 font-mono">AI+MCP</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mt-0.5">Agentic QA</div>
+          <div class="text-[11px] text-slate-500 dark:text-slate-400">Claude + Playwright</div>
+        </div>
+      </div>
+
     </section>
 
-    <section id="about" class="about">
-      <h2 class="section-title">
-        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg> About Me
-      </h2>
-      <div class="content-block">
-        <p class="about-lead">
-          I am an <strong>AI-assisted QA Automation Engineer</strong> with 3+ years of expertise specializing in scalable test automation and quality engineering. I bridge the gap between complex software development and airtight functional test coverage to ensure high-velocity deployments.
+    <!-- ========================================================= -->
+    <!-- ABOUT ME SECTION -->
+    <!-- ========================================================= -->
+    <section id="about" class="about max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+          About Me
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Architecting High-Velocity Quality
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          Specializing in scalable test automation and AI engineering to eliminate bugs before they hit production.
         </p>
-        
-        <p class="about-text">
-          Having worked across diverse, high-growth domains—including Healthcare, E-commerce, E-learning, Productivity, Social Media, and Sports Tech. My core focus is shifting testing left. I thrive in fast-paced environments where I can build quality into the code from day one, accelerating release velocity without ever risking application stability.
-        </p>
+      </div>
 
-        <div class="about-cards">
-          <div class="about-card">
-            <h3><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Automation Frameworks</strong></h3>
-            <p>Building custom, highly scalable test suites from scratch using Java, JavaScript, Playwright, and Selenium WebDriver.</p>
+      <!-- Main Narrative Card -->
+      <div class="content-block spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 sm:p-8 shadow-sm mb-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-left space-y-4">
+          <p class="about-lead text-base sm:text-lg text-slate-800 dark:text-slate-200 leading-relaxed font-normal">
+            I am an <strong class="text-brand-600 dark:text-brand-400 font-semibold">AI-assisted QA Automation Engineer</strong> with 3+ years of expertise specializing in scalable test automation and quality engineering. I bridge the gap between complex software development and airtight functional test coverage to ensure high-velocity deployments.
+          </p>
+          <p class="about-text text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Having worked across diverse, high-growth domains—including <span class="text-slate-800 dark:text-slate-200 font-medium">Healthcare, E-commerce, E-learning, Productivity, Social Media, and Sports Tech</span>. My core focus is shifting testing left. I thrive in fast-paced environments where I can build quality into the code from day one, accelerating release velocity without ever risking application stability.
+          </p>
+
+          <!-- Domain Pills Carousel -->
+          <div class="pt-2 flex flex-wrap items-center gap-2">
+            <span class="text-xs font-mono uppercase tracking-wider text-slate-400 dark:text-slate-500 mr-1">Domains Tested:</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">Healthcare</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">B2B E-commerce</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">E-learning</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">Time Tracking & Productivity</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">Social Media & Streaming</span>
+            <span class="domain-tag px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200/60 dark:border-slate-700/60">Sports Tech</span>
           </div>
-          
-          <div class="about-card">
-            <h3><strong><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg> Agentic AI Engineering</strong></h3>
-            <p>Architecting next-gen testing workflows by pairing Claude with Playwright MCP servers to radically slash time spent on exploratory testing and framework feasibility analysis.</p>
+        </div>
+      </div>
+
+      <!-- 3 Bento Pillars -->
+      <div class="about-cards grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+        
+        <!-- Card 1: Automation Frameworks -->
+        <div class="about-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 sm:p-6 shadow-sm hover:border-brand-500/50 hover:shadow-lg hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-2xl bg-sky-500/10 dark:bg-sky-500/15 border border-sky-500/20 text-sky-600 dark:text-sky-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-2">
+              Automation Frameworks
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+              Building custom, highly scalable test suites from scratch using Java, JavaScript, Playwright, and Selenium WebDriver.
+            </p>
           </div>
-          
-          <div class="about-card">
-            <h3><strong><svg class="icon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg> Backend & Integrations</strong></h3>
-            <p>Going beyond UI automation to validate REST APIs, advanced SQL databases, and critical third-party integrations like enterprise CRMs and global payment systems.</p>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950/40 text-sky-700 dark:text-sky-300">Playwright</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950/40 text-sky-700 dark:text-sky-300">Selenium</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950/40 text-sky-700 dark:text-sky-300">TypeScript</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950/40 text-sky-700 dark:text-sky-300">Java</span>
           </div>
         </div>
 
-        <p class="about-footer">
-          Whether it is solving complex quality challenges or leveraging Generative AI to streamline test data generation and defect analysis, I am passionate about finding innovative ways to make testing smarter, faster, and more impactful.
+        <!-- Card 2: Agentic AI Engineering -->
+        <div class="about-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 sm:p-6 shadow-sm hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-2xl bg-indigo-500/10 dark:bg-indigo-500/15 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                <circle cx="12" cy="5" r="2"></circle>
+                <path d="M12 7v4"></path>
+                <line x1="8" y1="16" x2="8" y2="16"></line>
+                <line x1="16" y1="16" x2="16" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-2">
+              Agentic AI Engineering
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+              Architecting next-gen testing workflows by pairing Claude with Playwright MCP servers to radically slash time spent on exploratory testing and framework feasibility analysis.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300">Claude AI</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300">Playwright MCP</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300">AI Agents</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Backend & Integrations -->
+        <div class="about-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 sm:p-6 shadow-sm hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-11 h-11 rounded-2xl bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-2">
+              Backend & Integrations
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+              Going beyond UI automation to validate REST APIs, advanced SQL databases, and critical third-party integrations like enterprise CRMs and global payment systems.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300">REST APIs</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300">MySQL</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300">Dynamics 365</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300">Stripe/Chase</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- About Footer Statement -->
+      <div class="about-footer-card p-5 rounded-2xl bg-gradient-to-r from-brand-500/10 via-indigo-500/10 to-teal-500/10 border border-brand-500/20 text-center">
+        <p class="about-footer text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium italic max-w-3xl mx-auto">
+          &ldquo;Whether it is solving complex quality challenges or leveraging Generative AI to streamline test data generation and defect analysis, I am passionate about finding innovative ways to make testing smarter, faster, and more impactful.&rdquo;
         </p>
       </div>
+
     </section>
 
-    <section id="experience" class="experience">
-      <h2 class="section-title">
-        <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Work Experience
-      </h2>
-      <div class="card-grid">
+    <!-- ========================================================= -->
+    <!-- WORK EXPERIENCE -->
+    <!-- ========================================================= -->
+    <section id="experience" class="experience max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Career Timeline
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Work Experience
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          Proven track record in driving quality, designing scalable test automation suites, and accelerating release cycles.
+        </p>
+      </div>
+
+      <div class="card-grid grid grid-cols-1 md:grid-cols-3 gap-5">
         
-        <article class="card exp-card">
-          <div class="exp-header">
-            <h3 class="exp-role">
-              <svg class="icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-              <span>Test Analyst</span>
-            </h3>
-            <h4 class="exp-company">
-              <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
-              <span>Codebrew Labs</span>
-            </h4>
+        <!-- Experience Card 1: Codebrew Labs (Current) -->
+        <article class="card exp-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Current Role
+              </span>
+              <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Nov 2025 – Present</span>
+            </div>
+
+            <div class="exp-header space-y-1.5 mb-3">
+              <h3 class="exp-role text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Test Analyst</span>
+              </h3>
+              <h4 class="exp-company text-sm font-semibold text-brand-600 dark:text-brand-400 flex items-center gap-2">
+                <svg class="w-4 h-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path></svg>
+                <span>Codebrew Labs</span>
+              </h4>
+            </div>
           </div>
-          <div class="exp-meta">
-            <span><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 2025 – Present</span>
-            <span class="meta-dot">•</span>
-            <span><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mohali, Punjab</span>
+
+          <div class="exp-meta pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Mohali, Punjab
+            </span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono text-[11px]">Full-Time</span>
           </div>
         </article>
 
-        <article class="card exp-card">
-          <div class="exp-header">
-            <h3 class="exp-role">
-              <svg class="icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-              <span>QA Automation Engineer | Junior Quality Analyst</span>
-            </h3>
-            <h4 class="exp-company">
-              <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
-              <span>Sourcemash Technologies</span>
-            </h4>
+        <!-- Experience Card 2: Sourcemash Technologies -->
+        <article class="card exp-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-semibold">
+                11 Mos
+              </span>
+              <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Nov 2024 – Sep 2025</span>
+            </div>
+
+            <div class="exp-header space-y-1.5 mb-3">
+              <h3 class="exp-role text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>QA Automation Engineer | Junior Quality Analyst</span>
+              </h3>
+              <h4 class="exp-company text-sm font-semibold text-brand-600 dark:text-brand-400 flex items-center gap-2">
+                <svg class="w-4 h-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path></svg>
+                <span>Sourcemash Technologies</span>
+              </h4>
+            </div>
           </div>
-          <div class="exp-meta">
-            <span><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 2024 – Sep 2025</span>
-            <span class="meta-dot">•</span>
-            <span><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mohali, Punjab</span>
+
+          <div class="exp-meta pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Mohali, Punjab
+            </span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono text-[11px]">Full-Time</span>
           </div>
         </article>
-        
-        <article class="card exp-card">
-          <div class="exp-header">
-            <h3 class="exp-role">
-              <svg class="icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-              <span>QA L1 | Test Trainee</span>
-            </h3>
-            <h4 class="exp-company">
-              <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
-              <span>Appwrk IT Solutions</span>
-            </h4>
+
+        <!-- Experience Card 3: Appwrk IT Solutions -->
+        <article class="card exp-card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 relative flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-semibold">
+                2 Yrs 5 Mos
+              </span>
+              <span class="text-xs font-mono text-slate-500 dark:text-slate-400">Apr 2022 – Aug 2024</span>
+            </div>
+
+            <div class="exp-header space-y-1.5 mb-3">
+              <h3 class="exp-role text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>QA L1 | Test Trainee</span>
+              </h3>
+              <h4 class="exp-company text-sm font-semibold text-brand-600 dark:text-brand-400 flex items-center gap-2">
+                <svg class="w-4 h-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path></svg>
+                <span>Appwrk IT Solutions</span>
+              </h4>
+            </div>
           </div>
-          <div class="exp-meta">
-            <span><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Apr 2022 – Aug 2024</span>
-            <span class="meta-dot">•</span>
-            <span><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mohali, Punjab</span>
+
+          <div class="exp-meta pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-brand-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Mohali, Punjab
+            </span>
+            <span class="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono text-[11px]">Full-Time</span>
           </div>
         </article>
 
       </div>
     </section>
 
-    <section id="skills" class="skills" aria-label="Skills section">
-      <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg> Skills</h2>
-      <div class="skills-accordion" id="skillsAccordion">
+    <!-- ========================================================= -->
+    <!-- SKILLS SECTION: Modern Accordion (Collapsed by Default) -->
+    <!-- ========================================================= -->
+    <section id="skills" class="skills max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12" aria-label="Skills section">
+      
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+          Technical Arsenal
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Skills & Specializations
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          Comprehensive quality assurance stack spanning automated testing, SDLC methodologies, and next-gen AI agent protocols.
+        </p>
+      </div>
+
+      <!-- Modern Interactive Accordion Container (All completely collapsed by default) -->
+      <div class="skills-accordion space-y-3.5" id="skillsAccordion">
         
-        <article class="acc-item" data-index="0" aria-expanded="false">
-          <button class="acc-header" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
-            <span class="acc-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M10 2v7.31"></path><path d="M14 9.3V2"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg></span>
-            <div class="acc-title">Testing Types</div>
-            <span class="acc-chevron" aria-hidden="true"></span>
+        <!-- Accordion Item 0: Testing Types -->
+        <article class="acc-item rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 overflow-hidden shadow-sm transition-all duration-300" data-index="0" aria-expanded="false">
+          <button class="acc-header w-full flex items-center justify-between p-4 sm:p-5 text-left cursor-pointer focus:outline-none focus:bg-slate-50 dark:focus:bg-slate-800/50" id="acc-header-0" aria-controls="acc-panel-0" aria-expanded="false">
+            <div class="flex items-center gap-3.5">
+              <span class="acc-icon w-9 h-9 rounded-xl bg-sky-500/10 dark:bg-sky-500/20 text-sky-600 dark:text-sky-400 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"></path><path d="M14 9.3V2"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
+              </span>
+              <div>
+                <h3 class="acc-title text-base sm:text-lg font-bold text-slate-900 dark:text-white">Testing Types</h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-mono">Functional, BDD, Regression, API & DB</span>
+              </div>
+            </div>
+            <span class="acc-chevron w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold transition-transform duration-300" aria-hidden="true">
+              <svg class="w-4 h-4 chevron-svg transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
           </button>
           <div id="acc-panel-0" class="acc-panel" role="region" aria-labelledby="acc-header-0">
-            <div class="acc-inner">
-              <ul>
-                <li>Functional, Integration, & System Testing</li>
-                <li>Cucumber (BDD), Test Driven Development</li>
-                <li>Regression & Compatibility Testing</li>
-                <li>API, Automation, & Database Testing</li>
-              </ul>
+            <div class="acc-inner px-4 sm:px-5 pb-5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-sky-500 flex-shrink-0"></span>
+                  <span>Functional, Integration, & System Testing</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0"></span>
+                  <span>Cucumber (BDD) & Test Driven Development (TDD)</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-teal-500 flex-shrink-0"></span>
+                  <span>Regression & Compatibility Testing</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-brand-500 flex-shrink-0"></span>
+                  <span>API, Automation, & Database Testing</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item" data-index="1" aria-expanded="false">
-          <button class="acc-header" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
-            <span class="acc-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></span>
-            <div class="acc-title">Test Planning & Execution</div>
-            <span class="acc-chevron" aria-hidden="true"></span>
+        <!-- Accordion Item 1: Test Planning & Execution -->
+        <article class="acc-item rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 overflow-hidden shadow-sm transition-all duration-300" data-index="1" aria-expanded="false">
+          <button class="acc-header w-full flex items-center justify-between p-4 sm:p-5 text-left cursor-pointer focus:outline-none focus:bg-slate-50 dark:focus:bg-slate-800/50" id="acc-header-1" aria-controls="acc-panel-1" aria-expanded="false">
+            <div class="flex items-center gap-3.5">
+              <span class="acc-icon w-9 h-9 rounded-xl bg-emerald-500/10 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              </span>
+              <div>
+                <h3 class="acc-title text-base sm:text-lg font-bold text-slate-900 dark:text-white">Test Planning & Execution</h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-mono">Test Plans, Bug Lifecycle, SDLC / STLC</span>
+              </div>
+            </div>
+            <span class="acc-chevron w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold transition-transform duration-300" aria-hidden="true">
+              <svg class="w-4 h-4 chevron-svg transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
           </button>
           <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1">
-            <div class="acc-inner">
-              <ul>
-                <li>Test Plan, Test Case, User Stories, Use case template creation</li>
-                <li>Regression checklist & release criteria</li>
-                <li>Bug lifecycle, SDLC and STLC</li>
-              </ul>
+            <div class="acc-inner px-4 sm:px-5 pb-5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                  <span>Test Plan, Test Case, User Stories & Use Case Templates</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                  <span>Regression Checklist & Release Readiness Criteria</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                  <span>End-to-End Bug Lifecycle, SDLC and STLC Mastery</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item" data-index="2" aria-expanded="false">
-          <button class="acc-header" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
-            <span class="acc-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></span>
-            <div class="acc-title">Project Management & Defect Tracking</div>
-            <span class="acc-chevron" aria-hidden="true"></span>
+        <!-- Accordion Item 2: Project Management & Defect Tracking -->
+        <article class="acc-item rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 overflow-hidden shadow-sm transition-all duration-300" data-index="2" aria-expanded="false">
+          <button class="acc-header w-full flex items-center justify-between p-4 sm:p-5 text-left cursor-pointer focus:outline-none focus:bg-slate-50 dark:focus:bg-slate-800/50" id="acc-header-2" aria-controls="acc-panel-2" aria-expanded="false">
+            <div class="flex items-center gap-3.5">
+              <span class="acc-icon w-9 h-9 rounded-xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </span>
+              <div>
+                <h3 class="acc-title text-base sm:text-lg font-bold text-slate-900 dark:text-white">Project Management & Defect Tracking</h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-mono">JIRA, Trello, Mantis, GitHub</span>
+              </div>
+            </div>
+            <span class="acc-chevron w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold transition-transform duration-300" aria-hidden="true">
+              <svg class="w-4 h-4 chevron-svg transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
           </button>
           <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2">
-            <div class="acc-inner">
-              <ul>
-                <li>JIRA & Trello</li>
-                <li>Mantis</li>
-                <li>GitHub</li>
-              </ul>
+            <div class="acc-inner px-4 sm:px-5 pb-5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                  <span>JIRA</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-sky-500 flex-shrink-0"></span>
+                  <span>Trello</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                  <span>Mantis</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                  <span>GitHub Issues & Projects</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="acc-item" data-index="3" aria-expanded="false">
-          <button class="acc-header" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
-            <span class="acc-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></span>
-            <div class="acc-title">Tools & Technologies</div>
-            <span class="acc-chevron" aria-hidden="true"></span>
+        <!-- Accordion Item 3: Tools & Technologies (Stacked tightly, no empty space) -->
+        <article class="acc-item rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 overflow-hidden shadow-sm transition-all duration-300" data-index="3" aria-expanded="false">
+          <button class="acc-header w-full flex items-center justify-between p-4 sm:p-5 text-left cursor-pointer focus:outline-none focus:bg-slate-50 dark:focus:bg-slate-800/50" id="acc-header-3" aria-controls="acc-panel-3" aria-expanded="false">
+            <div class="flex items-center gap-3.5">
+              <span class="acc-icon w-9 h-9 rounded-xl bg-purple-500/10 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </span>
+              <div>
+                <h3 class="acc-title text-base sm:text-lg font-bold text-slate-900 dark:text-white">Tools & Technologies</h3>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-mono">Playwright, Selenium, CI/CD, GenAI & MCP</span>
+              </div>
+            </div>
+            <span class="acc-chevron w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold transition-transform duration-300" aria-hidden="true">
+              <svg class="w-4 h-4 chevron-svg transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
           </button>
           <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3">
-            <div class="acc-inner">
-              <ul>
-                <li>Selenium: Java - TestNG </li>
-                <li> Playwright: Javascript/TypeScript </li>
-                <li> GitHub Actions: CI/CD </li>
-                <li> GitHub: version control </li>
-                <li> Postman and Swagger UI: API Testing </li>
-                <li> MySQL: Database Testing </li>
-                <li> BrowserStack: Compatibility Testing </li>
-                <li> CRM: MS Dynamics 365 </li>
-                <li> Payment Gateways: Chase, Stripe </li>
-                <li> Generative AI for Test strategy & Model Context Protocol (MCP) workflows </li>
-              </ul>
+            <div class="acc-inner px-4 sm:px-5 pb-5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>
+                  <span>Playwright: JavaScript / TypeScript</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+                  <span>Selenium: Java - TestNG</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                  <span>GitHub Actions: CI/CD Automated Pipelines</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-slate-400 flex-shrink-0"></span>
+                  <span>GitHub: Version Control & Code Reviews</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                  <span>Postman & Swagger UI: API Testing</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0"></span>
+                  <span>MySQL: Database Testing & Verification</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-cyan-500 flex-shrink-0"></span>
+                  <span>BrowserStack: Cross-Browser & Device Testing</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+                  <span>Enterprise CRM: Microsoft Dynamics 365</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                  <span>Payment Gateways: Chase, Stripe</span>
+                </div>
+                <div class="skill-pill">
+                  <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                  <span>Generative AI for Test strategy & Model Context Protocol (MCP) workflows</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
@@ -230,196 +682,624 @@
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> Featured Projects</h2>
-      <div class="card-grid collapsed" id="featured-grid">
+    <!-- ========================================================= -->
+    <!-- FEATURED PROJECTS SECTION -->
+    <!-- ========================================================= -->
+    <section id="projects" class="projects max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          Portfolio Work
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Featured Projects
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          High-impact applications tested, verified, and shipped across web, Android, and iOS ecosystems.
+        </p>
+      </div>
+
+      <!-- Projects Grid with Progressive Disclosure -->
+      <div class="card-grid collapsed grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="featured-grid">
         
-        <article class="card">
-          <h3>Dawri-Al-Madaris</h3>
-          <div class="project-badges">
-            <a href="https://school-al.dawri-madaris.gg/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
-            <a href="https://play.google.com/store/search?q=dawri%20al%20madaris&c=apps&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
-            <a href="https://apps.apple.com/in/app/dawri-al-madaris/id6743482846" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+        <!-- Project 1: Dawri-Al-Madaris -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 text-xs font-mono font-semibold">
+                Sports Tech
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Web & Mobile</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              Dawri-Al-Madaris
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Full-cycle quality testing for an enterprise sports management ecosystem across web, iOS, and Android applications.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 16.5 10 15 15.5 9 15.5 7.5 10 12 6"></polygon><path d="M12 6V2"></path><path d="M16.5 10h4.5"></path><path d="M15 15.5l3.5 3.5"></path><path d="M9 15.5l-3.5 3.5"></path><path d="M7.5 10H3"></path></svg> Domain: </strong>Sports Tech (Web, and Mobile).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="https://school-al.dawri-madaris.gg/" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-500 dark:bg-slate-800 dark:hover:bg-brand-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Web App" title="Web App">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+                <a href="https://play.google.com/store/search?q=dawri%20al%20madaris&c=apps&hl=en" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-emerald-500 dark:bg-slate-800 dark:hover:bg-emerald-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Android App" title="Google Play Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg>
+                </a>
+                <a href="https://apps.apple.com/in/app/dawri-al-madaris/id6743482846" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="iOS App" title="Apple App Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Larson-Juhl</h3>
-          <div class="project-badges">
-            <a href="https://shop.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
-            <a href="https://play.google.com/store/search?q=larson+juhl&c=apps&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
-            <a href="https://apps.apple.com/in/app/larson-juhl/id6448109646" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+        <!-- Project 2: Larson-Juhl -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold">
+                B2B E-commerce
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Web & Native</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              Larson-Juhl
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Global framing and manufacturing B2B e-commerce platform. Automated critical cart, checkout, CRM synchronization, and payment gateway workflows.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Domain: </strong>B2B E-commerce (Web, Native).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="https://shop.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-500 dark:bg-slate-800 dark:hover:bg-brand-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Web App" title="Web App">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+                <a href="https://play.google.com/store/search?q=larson+juhl&c=apps&hl=en" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-emerald-500 dark:bg-slate-800 dark:hover:bg-emerald-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Android App" title="Google Play Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg>
+                </a>
+                <a href="https://apps.apple.com/in/app/larson-juhl/id6448109646" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="iOS App" title="Apple App Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>LJ-Design Studio</h3>
-          <div class="project-badges">
-            <a href="https://designstudio.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
-            <a href="https://play.google.com/store/apps/details?id=com.larsonjuhl.designstudio&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
-            <a href="https://apps.apple.com/in/app/lj-design-studio/id6745772677" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+        <!-- Project 3: LJ-Design Studio -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold">
+                B2B E-commerce
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Web & Native</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              LJ-Design Studio
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Interactive visualization and custom framing design suite. Verified precision rendering, dynamic matrix pricing, and cross-platform native stability.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Domain: </strong>B2B E-commerce (Web, Native).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="https://designstudio.larsonjuhl.com/" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-500 dark:bg-slate-800 dark:hover:bg-brand-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Web App" title="Web App">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.larsonjuhl.designstudio&hl=en" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-emerald-500 dark:bg-slate-800 dark:hover:bg-emerald-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Android App" title="Google Play Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg>
+                </a>
+                <a href="https://apps.apple.com/in/app/lj-design-studio/id6745772677" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="iOS App" title="Apple App Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Clockdiary</h3>
-          <div class="project-badges">
-            <a href="https://app.clockdiary.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+        <!-- Project 4: Clockdiary -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-mono font-semibold">
+                Productivity
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Web & Desktop</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              Clockdiary
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Employee time tracking, productivity analytics, and monitoring SaaS. Validated granular timesheets, background task sync, and reports generation.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"></circle><polyline points="12 9 12 13 14 15"></polyline><path d="M5 3L2 6"></path><path d="M19 3l3 3"></path></svg> Domain: </strong>Time Tracking and Productivity (Web, Desktop).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="https://app.clockdiary.com/" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-500 dark:bg-slate-800 dark:hover:bg-brand-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Web App" title="Web App">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>Nemesis</h3>
-          <div class="project-badges">
-             <a href="https://play.google.com/store/apps/details?id=com.nemesisvs&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Android App" title="Android App"><svg viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg></a>
-             <a href="https://apps.apple.com/in/app/nemesis-vs/id6757146828" target="_blank" rel="noopener noreferrer" aria-label="iOS App" title="iOS App"><svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg></a>
+        <!-- Project 5: Nemesis -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-mono font-semibold">
+                Social & Music
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Native Mobile</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              Nemesis
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Hybrid social media, music streaming, and mobile commerce app. Tested audio buffering, live streaming feeds, payment checkout, and device compatibility.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Domain: </strong>Social Media, Music Streaming, and E-commerce (Native).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="https://play.google.com/store/apps/details?id=com.nemesisvs&hl=en" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-emerald-500 dark:bg-slate-800 dark:hover:bg-emerald-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Android App" title="Google Play Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993s-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.244 13.8533 7.85 12 7.85s-3.5902.394-5.1367 1.1002L4.841 5.4472a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/></svg>
+                </a>
+                <a href="https://apps.apple.com/in/app/nemesis-vs/id6757146828" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-900 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="iOS App" title="Apple App Store">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.85 2.11-1.65 3.19-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <h3>OSCE- Connect</h3>
-          <div class="project-badges">
-             <a href="http://app.osceconnect.com/" target="_blank" rel="noopener noreferrer" aria-label="Web App" title="Web App"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+        <!-- Project 6: OSCE-Connect -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold">
+                E-Learning
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Web Application</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              OSCE- Connect
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Clinical skills assessment and educational platform for medical professionals. Verified interactive test cases, timed workflows, and scoring rubrics.
+            </p>
           </div>
-          <p><strong><svg class="icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg> Domain: </strong>E- Learning (Web).</p>
+
+          <div>
+            <div class="project-badges pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400">Live Apps:</span>
+              <div class="flex items-center gap-2">
+                <a href="http://app.osceconnect.com/" target="_blank" rel="noopener noreferrer" class="badge-icon w-9 h-9 rounded-xl bg-slate-100 hover:bg-brand-500 dark:bg-slate-800 dark:hover:bg-brand-500 text-slate-700 hover:text-white dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-all duration-200 shadow-sm" aria-label="Web App" title="Web App">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
 
       </div>
 
-      <div class="view-all-container">
-        <button class="view-all-btn" data-target="featured-grid">View All Projects +</button>
+      <!-- Progressive Disclosure Button: View All Projects -->
+      <div class="view-all-container mt-8 text-center">
+        <button class="view-all-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white dark:bg-slate-800/90 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 border border-brand-500/30 hover:border-brand-500 font-semibold text-xs sm:text-sm shadow-sm hover:shadow-md transition-all duration-300" data-target="featured-grid">
+          View All Projects +
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- COMMUNITY CONTRIBUTIONS SECTION -->
+    <!-- ========================================================= -->
+    <section id="community_contributions" class="community_contributions max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+          Open Source & Community
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Community Contributions
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          Architecting open-source automated test suites, BDD frameworks, and CI/CD demonstration pipelines.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="community-grid">
+        
+        <!-- Contribution 1: FoodKart Playwright -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 sm:p-7 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 text-xs font-mono font-semibold">
+                Playwright + TypeScript + BDD
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Cucumber & CI/CD</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+              FoodKart- Playwright Automation
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+              Self-running quality assurance framework validating critical user journeys—from menu browsing to checkout with plain-English Gherkin BDD syntax.
+            </p>
+          </div>
+
+          <div class="project-badges pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/FoodKart-Playwright-Automation" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-semibold transition-colors" aria-label="GitHub Repo" title="GitHub Repository">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              <span>View Source</span>
+            </a>
+
+            <button class="read-more-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-brand-500/20 hover:shadow-brand-500/40 transition-all duration-200" data-modal="modal-foodkart">
+              <span>Know More</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Contribution 2: Swag Lab Selenium -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-3xl p-6 sm:p-7 shadow-sm hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 text-xs font-mono font-semibold">
+                Selenium + Java + TDD
+              </span>
+              <span class="text-xs text-slate-400 font-mono">TestNG & CI/CD</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+              Swag Lab- Selenium Automation
+            </h3>
+
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+              Robust automated testing solution validating e-commerce authentication, inventory checks, and cart processing with TestNG & GitHub Actions.
+            </p>
+          </div>
+
+          <div class="project-badges pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+            <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/Swag_Lab_Automation" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-semibold transition-colors" aria-label="GitHub Repo" title="GitHub Repository">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              <span>View Source</span>
+            </a>
+
+            <button class="read-more-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-semibold shadow-md shadow-brand-500/20 hover:shadow-brand-500/40 transition-all duration-200" data-modal="modal-swaglab">
+              <span>Know More</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="community_contributions" class="community_contributions">
-      <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg> Community Contributions</h2>
-      <div class="card-grid" id="community-grid">
+    <!-- ========================================================= -->
+    <!-- CERTIFICATIONS -->
+    <!-- ========================================================= -->
+    <section id="certifications" class="certifications max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      
+      <div class="text-center mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          Credentials & Training
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Certifications
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mt-1.5">
+          Continuous commitment to mastering testing frameworks, Agile engineering, and Generative AI workflows.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         
-        <article class="card">
-          <h3>FoodKart- Playwright Automation</h3>
-          <div class="project-badges">
-             <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/FoodKart-Playwright-Automation" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" title="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
-             <button class="read-more-btn" data-modal="modal-foodkart">Know More</button>
+        <!-- Cert 1 -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 shadow-sm hover:border-brand-500/50 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+              Software Testing Masterclass-JIRA | AGILE | API Testing
+            </h3>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="https://drive.google.com/file/d/1AhvhMWJqE2kmQTtv1TlP_Cc8sbstz7dy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 transition-colors inline-flex items-center gap-1.5">
+              <span>QSpiders</span>
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <a href="https://drive.google.com/file/d/14cIKaJOmEoi1vArv9uuLHeZo46ey4IVp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 transition-colors inline-flex items-center gap-1.5">
+              <span>Udemy</span>
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </article>
 
-        <article class="card">
-          <h3>Swag Lab- Selenium Automation</h3>
-          <div class="project-badges">
-             <a href="https://github.com/PadmalochanMurmu12/Automation_Projects/tree/main/Swag_Lab_Automation" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo" title="GitHub Repository"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
-             <button class="read-more-btn" data-modal="modal-swaglab">Know More</button>
+        <!-- Cert 2 -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 shadow-sm hover:border-brand-500/50 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-xl bg-sky-500/10 text-sky-500 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+              Playwright Automation (JS & TS)
+            </h3>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="https://drive.google.com/file/d/15TBtr-G2mJFzPjS9ZPQLAWAIAg8jPpcO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 transition-colors inline-flex items-center gap-1.5">
+              <span>Udemy</span>
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
           </div>
         </article>
+
+        <!-- Cert 3 -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 shadow-sm hover:border-brand-500/50 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+              Software Testing with Generative AI
+            </h3>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="https://drive.google.com/file/d/1UeYI639MpUhrv1Gtos8vlb73dHXHJI-N/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 transition-colors inline-flex items-center gap-1.5">
+              <span>Simplilearn</span>
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Cert 4 -->
+        <article class="card spotlight-card backdrop-blur-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/90 dark:border-slate-800/90 rounded-2xl p-5 shadow-sm hover:border-brand-500/50 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-xl bg-teal-500/10 text-teal-500 flex items-center justify-center mb-3">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+              GenAI & AI Agents for QA Automation
+            </h3>
+          </div>
+          <div class="pt-3 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs font-semibold">
+            <a href="https://drive.google.com/file/d/1cxcsaxxfDWeRfkCFR-v4n_7a6mXg6fpe/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-brand-500 hover:text-white dark:hover:bg-brand-500 text-brand-600 dark:text-brand-400 transition-colors inline-flex items-center gap-1.5">
+              <span>Udemy</span>
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="certifications" class="certifications">
-      <h2 class="section-title"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> Certifications</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> Software Testing Masterclass-JIRA | AGILE | API Testing</h3>
-          <p><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <a href="https://drive.google.com/file/d/1AhvhMWJqE2kmQTtv1TlP_Cc8sbstz7dy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">QSpiders</a></p>
-          <p><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <a href="https://drive.google.com/file/d/14cIKaJOmEoi1vArv9uuLHeZo46ey4IVp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
-        </article>
-        <article class="card">
-          <h3><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> Playwright Automation (JS & TS)</h3>
-          <p><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <a href="https://drive.google.com/file/d/15TBtr-G2mJFzPjS9ZPQLAWAIAg8jPpcO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
-        </article>
-        <article class="card">
-          <h3><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> Software Testing with Generative AI</h3>
-          <p><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <a href="https://drive.google.com/file/d/1UeYI639MpUhrv1Gtos8vlb73dHXHJI-N/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Simplilearn</a></p>
-        </article>
-        <article class="card">
-          <h3><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg> GenAI & AI Agents for QA Automation</h3>
-          <p><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <a href="https://drive.google.com/file/d/1cxcsaxxfDWeRfkCFR-v4n_7a6mXg6fpe/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">Udemy</a></p>
-        </article>
+    <!-- ========================================================= -->
+    <!-- CONTACT SECTION -->
+    <!-- ========================================================= -->
+    <section id="contact" class="contact max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-center">
+      
+      <div class="mb-6 sm:mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Get in Touch
+        </div>
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-2">
+          Let's Connect
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mt-1.5">
+          Interested in discussing test automation frameworks, AI agent workflows, or have an exciting role? Reach out anytime!
+        </p>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <h2 class="section-title">Let's Connect <svg class="icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></h2>
-      <div class="social-links">
-        <a href="mailto:padmalochanmurmu81@gmail.com" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          Gmail
-        </a>
+      <!-- Social Channels Pill Grid -->
+      <div class="social-links flex flex-wrap items-center justify-center gap-3 mb-8">
         
-        <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          LinkedIn
-        </a>
-        
-        <a href="https://github.com/PadmalochanMurmu12" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          GitHub
-        </a>
-        
-        <a href="https://medium.com/@padmalochanmurmu81" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728L4.278 10.33v9.434c-.032.241.053.481.233.649l2.28 2.686v.403H.842v-.403l2.279-2.686c.18-.168.266-.408.234-.649V2.012z"/></svg>
-          Medium
+        <!-- Gmail -->
+        <a href="mailto:padmalochanmurmu81@gmail.com" target="_blank" rel="noopener noreferrer" class="social-pill inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:text-red-500 dark:hover:text-red-400 hover:border-red-500/40 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>Gmail</span>
         </a>
 
-        <a href="https://wa.me/+917008217452" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-            <path d="M12.012 2c-5.506 0-9.969 4.463-9.969 9.969 0 1.763.457 3.483 1.326 5.002L2 22l5.148-1.352a9.927 9.927 0 0 0 4.864 1.27h.005c5.505 0 9.968-4.463 9.968-9.969 0-2.668-1.039-5.176-2.924-7.06A9.897 9.897 0 0 0 12.012 2zm5.728 14.103c-.238.67-1.18 1.225-1.93 1.38-.515.105-1.182.191-3.414-.73-2.856-1.182-4.697-4.088-4.839-4.281-.139-.187-1.155-1.536-1.155-2.929 0-1.393.729-2.083.992-2.364.263-.281.572-.352.763-.352.191 0 .382.002.548.01.176.008.411-.067.643.488.238.572.812 1.98.883 2.124.071.144.119.313.024.502-.095.19-.143.313-.286.48-.143.167-.301.373-.43.51-.138.144-.282.3-.12.583.162.282.72 1.189 1.548 1.926 1.066.949 1.966 1.243 2.248 1.383.282.14.447.119.613-.072.167-.191.716-.835.907-1.121.191-.286.382-.238.644-.143.262.095 1.662.808 1.948.951.286.143.477.215.548.334.072.119.072.692-.166 1.362z"/>
-          </svg>
-          WhatsApp
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/padmalochan-murmu-6b55891ba" target="_blank" rel="noopener noreferrer" class="social-pill inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-400 hover:border-blue-500/40 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
         </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/PadmalochanMurmu12" target="_blank" rel="noopener noreferrer" class="social-pill inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white hover:border-slate-400 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Medium -->
+        <a href="https://medium.com/@padmalochanmurmu81" target="_blank" rel="noopener noreferrer" class="social-pill inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/40 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728L4.278 10.33v9.434c-.032.241.053.481.233.649l2.28 2.686v.403H.842v-.403l2.279-2.686c.18-.168.266-.408.234-.649V2.012z"/></svg>
+          <span>Medium</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+917008217452" target="_blank" rel="noopener noreferrer" class="social-pill inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/80 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/40 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 font-medium text-xs sm:text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.969 4.463-9.969 9.969 0 1.763.457 3.483 1.326 5.002L2 22l5.148-1.352a9.927 9.927 0 0 0 4.864 1.27h.005c5.505 0 9.968-4.463 9.968-9.969 0-2.668-1.039-5.176-2.924-7.06A9.897 9.897 0 0 0 12.012 2zm5.728 14.103c-.238.67-1.18 1.225-1.93 1.38-.515.105-1.182.191-3.414-.73-2.856-1.182-4.697-4.088-4.839-4.281-.139-.187-1.155-1.536-1.155-2.929 0-1.393.729-2.083.992-2.364.263-.281.572-.352.763-.352.191 0 .382.002.548.01.176.008.411-.067.643.488.238.572.812 1.98.883 2.124.071.144.119.313.024.502-.095.19-.143.313-.286.48-.143.167-.301.373-.43.51-.138.144-.282.3-.12.583.162.282.72 1.189 1.548 1.926 1.066.949 1.966 1.243 2.248 1.383.282.14.447.119.613-.072.167-.191.716-.835.907-1.121.191-.286.382-.238.644-.143.262.095 1.662.808 1.948.951.286.143.477.215.548.334.072.119.072.692-.166 1.362z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
       </div>
       
-      <div class="resume-section">
-        <a href="https://drive.google.com/file/d/1IevCI-b6qt8crlRCMsQegF59iN3bcgYY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-btn">
-          <span class="resume-icon">📄</span> View My Resume
+      <!-- Resume Hero Action Card -->
+      <div class="resume-section max-w-md mx-auto">
+        <a href="https://drive.google.com/file/d/1IevCI-b6qt8crlRCMsQegF59iN3bcgYY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="resume-btn group w-full inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-brand-600 via-sky-500 to-accent-cyan hover:from-brand-500 hover:to-sky-400 text-white font-bold text-sm sm:text-base shadow-xl shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-1 transition-all duration-300">
+          <svg class="w-5 h-5 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>View / Download Resume</span>
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
       </div>
+
     </section>
+
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <p>Built with <span class="heart"><svg class="icon icon-fill" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> using HTML, CSS, & JS</p>
-      <p class="copyright">&copy; <span id="current-year">2026</span> Padmalochan Murmu. All rights reserved.</p>
+  <!-- ========================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================= -->
+  <footer class="border-t border-slate-200/80 dark:border-slate-800/80 py-8 px-4 sm:px-6 mt-8 text-center text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+    <div class="footer-content max-w-6xl mx-auto flex flex-col items-center gap-2">
+      <p class="flex items-center justify-center gap-1.5 font-medium">
+        Built with 
+        <span class="heart text-red-500 inline-block animate-pulse">
+          <svg class="w-4 h-4 fill-current inline-block" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </span> 
+        using HTML, Tailwind CSS, & Vanilla JS
+      </p>
+      <p class="copyright text-xs font-mono">
+        &copy; <span id="current-year">2026</span> Padmalochan Murmu. All rights reserved.
+      </p>
     </div>
   </footer>
 
-  <dialog id="modal-foodkart" class="project-modal">
-    <div class="modal-header">
-      <h3>FoodKart- Playwright Automation</h3>
-      <button class="close-modal" aria-label="Close modal"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  <!-- ========================================================= -->
+  <!-- NATIVE HTML5 MODAL DIALOGS -->
+  <!-- ========================================================= -->
+  
+  <!-- FoodKart Modal -->
+  <dialog id="modal-foodkart" class="project-modal backdrop:backdrop-blur-md backdrop:bg-slate-950/70 p-0 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl max-w-xl w-[92%] overflow-hidden text-slate-900 dark:text-slate-100">
+    <div class="modal-header p-6 pb-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-xl bg-sky-500/10 text-sky-500 flex items-center justify-center">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+          FoodKart- Playwright Automation
+        </h3>
+      </div>
+      <button class="close-modal p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Close modal">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
-    <div class="modal-content">
-      <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> Objective</strong><br>
-      Architected a scalable, self-running quality assurance framework to validate critical user journeys—from menu browsing to final checkout. Built with a Behavior-Driven Development (BDD) approach so product managers and non-technical stakeholders can read the test scenarios in plain English, while the engine ensures zero-downtime deployments.</p>
-      <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Tech Stack & Architecture</strong></p>
-      <ul>
-        <li><strong>Core Engine:</strong> Playwright</li>
-        <li><strong>Language:</strong> TypeScript (for strict type-checking and maintainability)</li>
-        <li><strong>Design Pattern:</strong> Cucumber (BDD) for plain-English Gherkin syntax</li>
-        <li><strong>Infrastructure:</strong> GitHub Actions (CI/CD integration for automated execution on every pull request)</li>
-      </ul>
+
+    <div class="modal-content p-6 space-y-5 text-sm leading-relaxed">
+      <div>
+        <h4 class="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 text-sm uppercase tracking-wider font-mono text-brand-600 dark:text-brand-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          Objective
+        </h4>
+        <p class="text-slate-600 dark:text-slate-300">
+          Architected a scalable, self-running quality assurance framework to validate critical user journeys—from menu browsing to final checkout. Built with a Behavior-Driven Development (BDD) approach so product managers and non-technical stakeholders can read the test scenarios in plain English, while the engine ensures zero-downtime deployments.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+        <h4 class="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3 text-sm uppercase tracking-wider font-mono text-brand-600 dark:text-brand-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Tech Stack & Architecture
+        </h4>
+        <ul class="space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Core Engine:</strong> Playwright</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Language:</strong> TypeScript (strict type-checking and maintainability)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Design Pattern:</strong> Cucumber (BDD) with plain-English Gherkin syntax</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Infrastructure:</strong> GitHub Actions (CI/CD automated execution on every pull request)</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </dialog>
 
-  <dialog id="modal-swaglab" class="project-modal">
-    <div class="modal-header">
-      <h3>Swag Lab- Selenium Automation</h3>
-      <button class="close-modal" aria-label="Close modal"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  <!-- Swag Lab Modal -->
+  <dialog id="modal-swaglab" class="project-modal backdrop:backdrop-blur-md backdrop:bg-slate-950/70 p-0 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl max-w-xl w-[92%] overflow-hidden text-slate-900 dark:text-slate-100">
+    <div class="modal-header p-6 pb-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </span>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+          Swag Lab- Selenium Automation
+        </h3>
+      </div>
+      <button class="close-modal p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Close modal">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
-    <div class="modal-content">
-      <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> Objective</strong><br>
-      Engineered a robust, scalable automated testing solution to validate critical e-commerce flows including user authentication, inventory validation, and cart checkout processing. Utilized a strict Test-Driven Development (TDD) methodology to ensure high reliability and immediate regression detection.</p>
-      <p><strong><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Tech Stack & Architecture</strong></p>
-      <ul>
-        <li><strong>Core Engine:</strong> Selenium WebDriver</li>
-        <li><strong>Language:</strong> Java</li>
-        <li><strong>Design Pattern:</strong> TestNG (TDD Approach)</li>
-        <li><strong>Infrastructure:</strong> GitHub Actions CI/CD Pipeline</li>
-      </ul>
+
+    <div class="modal-content p-6 space-y-5 text-sm leading-relaxed">
+      <div>
+        <h4 class="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 text-sm uppercase tracking-wider font-mono text-brand-600 dark:text-brand-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          Objective
+        </h4>
+        <p class="text-slate-600 dark:text-slate-300">
+          Engineered a robust, scalable automated testing solution to validate critical e-commerce flows including user authentication, inventory validation, and cart checkout processing. Utilized a strict Test-Driven Development (TDD) methodology to ensure high reliability and immediate regression detection.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+        <h4 class="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3 text-sm uppercase tracking-wider font-mono text-brand-600 dark:text-brand-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1.65 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          Tech Stack & Architecture
+        </h4>
+        <ul class="space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Core Engine:</strong> Selenium WebDriver</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Language:</strong> Java</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Design Pattern:</strong> TestNG (TDD Approach)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-500 font-bold">•</span>
+            <span><strong class="text-slate-900 dark:text-white">Infrastructure:</strong> GitHub Actions CI/CD Pipeline</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </dialog>
 

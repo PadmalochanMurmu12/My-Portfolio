@@ -1,12 +1,44 @@
 # 🚀 Release Notes: Personal Portfolio Website
 
-[v1.3.2] — 2026-11-08
-📄 Resume Link Update
+## [v2.0.0] — 2026-11-27
+
+### 💎 Major Modern UI Overhaul (Tailwind CSS & Watermelon UI Architecture)
+
+This major release completely transforms the portfolio from a generic website into a modern, interactive, and premium quality engineering showcase powered by Tailwind CSS, Watermelon UI component patterns, and an advanced dual theme engine.
+
+#### 🌟 Key Highlights & New Features
+
+* **Tailwind CSS & Watermelon UI Design System:**
+  * **Ambient Lighting Engine:** Replaced the legacy moving background with multi-layered ambient radial glow meshes (`ambient-glow-1`, `2`, `3`) and subtle mask grids for a modern glassmorphic atmosphere.
+  * **Typography Modernization:** Upgraded typography hierarchy combining **Plus Jakarta Sans** for crisp headings/body copy and **JetBrains Mono** for technical chips and metadata tags.
+  * **Floating Island Navigation:** Replaced the standard fixed bar with a centered floating pill navbar featuring `backdrop-blur-xl`, custom brand monogram (`PM`), active scrollspy link indicators, and a smooth mobile drawer.
+* **Interactive Micro-Interactions & Spotlights:**
+  * **Cursor-Tracking Spotlight Effect:** Integrated interactive cursor spotlight tracking (`.spotlight-card`) across Bento cards, rendering a luminous radial highlight that follows mouse movement.
+  * **Dynamic Hero Stat Bento:** Added quick-impact metrics cards (3+ Years Experience, 6+ Shipped Domains, 100% Shift-Left Focus, AI+MCP QA).
+  * **Live Availability Radar:** Added an animated pulsing badge highlighting current availability for QA automation and AI projects.
+* **Dual Theme Engine & Dark Mode Contrast Polish:**
+  * Seamless light/dark mode switcher saving to `localStorage` and driving both Tailwind `dark:` classes and CSS custom properties.
+  * **High-Contrast Dark Mode Pills:** Fixed pill component styling in dark mode with deep slate backgrounds (`rgba(30, 41, 59, 0.85)`) and pure white (`#ffffff`) text, resolving previous low-contrast visibility issues.
+  * **Smooth Theme Toggle:** Micro-interaction button with rotating Sun/Moon SVGs.
+* **Skills Accordion Refactor & Continuous Pill Stacking:**
+  * **Clean Initial Collapse:** All skill accordions now initialize completely collapsed on page load.
+  * **Zero-Bleed Collapse Transition:** Added `overflow: hidden;`, `min-height: 0;`, and `visibility: hidden;` constraints to prevent pills or borders from leaking when collapsed.
+  * **Eliminated Blank Gaps:** Converted rigid 2-column grid layouts into responsive, tight badge clouds (`flex flex-wrap gap-2.5`), ensuring tools like Playwright, Selenium, and GenAI MCP stack naturally without empty slots.
+* **Refined Layout Density & Spacing:**
+  * Decreased excessive vertical gaps across all sections from About to Contact, reducing section paddings to `py-8 sm:py-12` and header margins to `mb-6 sm:mb-8` for a cohesive layout.
+
+---
+
+## [v1.3.2] — 2026-11-08
+
+### 📄 Resume Link Update
 
 This patch includes a minor update to the portfolio's resume link to ensure visitors can access the latest version of the resume.
 
-🌟 Key Improvements & Bug Fixes
-Resume Link Update: Updated the resume link to point to the latest version of the resume, ensuring visitors can access the correct document directly from the portfolio.
+#### 🌟 Key Improvements & Bug Fixes
+* **Resume Link Update:** Updated the resume link to point to the latest version of the resume, ensuring visitors can access the correct document directly from the portfolio.
+
+---
 
 ## [v1.3.1] — 2026-09-01
 
@@ -38,6 +70,9 @@ This release marks a complete structural and design refactor of the contact sect
 #### 🌟 What's New?
 
 * **Replaced the Static Fancy Icons with the Clean and Professional badges:** Replaced the static icons with professional badges with a new mode of reaching out: WhatsApp
+
+---
+
 ## [v1.2.1] — 2026-04-27
 
 ### 📄 Updated Resume and Featured Projects
